@@ -1,0 +1,22 @@
+
+= windows subsystem linux
+
+== 默认用户
+[source,shell script]
+----
+alpine config --default-user root
+----
+
+== reboot
+
+[source,shell script]
+----
+# CMD (admin)
+net stop LxssManager
+net start LxssManager
+
+# PowerShell (admin)
+Restart-Service LxssManager
+
+wsl --shutdown
+----
