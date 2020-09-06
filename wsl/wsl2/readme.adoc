@@ -1,0 +1,19 @@
+
+= wsl2
+
+https://docs.microsoft.com/zh-cn/windows/wsl/install-win10[wsl2安装流程]
+
+[source,cmd]
+----
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+wsl --set-default-version 2
+
+----
+
+
+错误: 0x1bc
+
+https://docs.microsoft.com/zh-cn/windows/wsl/wsl2-kernel[wsl2 内核]
