@@ -5,6 +5,9 @@ https://docs.microsoft.com/zh-cn/windows/wsl/install-win10[wsl2安装流程]
 
 [source,cmd]
 ----
+查看版本
+wsl -l -v
+
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
