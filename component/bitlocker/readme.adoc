@@ -1,0 +1,13 @@
+
+= bitlocker
+
+[source,shell script]
+----
+@echo off
+
+echo.
+manage-bde -lock e:
+
+pause >nul
+
+----
