@@ -1,0 +1,198 @@
+Windows Registry Editor Version 5.00
+
+;IE主页
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"First Home Page"="about:Tabs"
+"Start Page"="http://hao.360.cn/?src=lm&ls=n17c618d794"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN]
+"First Home Page"="about:Tabs"
+"Start Page"="http://hao.360.cn/?src=lm&ls=n17c618d794"
+
+;IE搜索设置
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes]
+"DefaultScope"="{A11BC570-E134-4919-8A5A-5CD9C5D52BA0}"
+"DownloadRetries"=dword:00000000
+
+[-HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{0633EE93-D776-472f-A0FF-E1416B8B2E3A}]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\SearchScopes\{A11BC570-E134-4919-8A5A-5CD9C5D52BA0}]
+"DisplayName"="百度"
+"URL"="http://www.baidu.com/s?wd={searchTerms}&ie=utf-8"
+"ShowSearchSuggestions"=dword:00000001
+"SuggestionsURL_JSON"="http://suggestion.baidu.com/su?wd={searchTerms}&action=opensearch&ie=utf-8&from=ie8"
+"Codepage"=dword:0000fde9
+"FaviconURL"="http://www.baidu.com/favicon.ico"
+"SortIndex"=dword:00000001
+
+;关闭加载项性能通知
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Ext] 
+"DisableAddonLoadTimePerformanceNotifications"=dword:00000001 
+
+;关闭 SmartScreen
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\PhishingFilter] 
+"EnabledV9"=dword:00000000 
+
+;关闭仿冒网站筛选器
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\PhishingFilter] 
+"Enabled"=dword:00000000 
+
+;关闭安全设置检查
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Security] 
+"DisableSecuritySettingsCheck"=dword:00000001 
+
+;关闭自动更新
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Main] 
+"EnableAutoUpgrade"=dword:00000000 
+
+;阻止向导，进入主页
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Main] 
+"DisableFirstRunCustomize"=dword:00000001 
+
+;禁用组件自动安装
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions] 
+"NoJITSetup"=dword:00000001 
+
+;禁用定期检查更新
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions] 
+"NoUpdateCheck"=dword:00000001 
+
+;阻止参加“客户体验改善计划”
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\SQM] 
+"DisableCustomerImprovementProgram"=dword:00000000 
+
+;始终发送“不跟踪标头”
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Main] 
+"DoNotTrack"=dword:00000001 
+
+;不检查已下载程序的签名
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Download] 
+"CheckExeSignatures"="no" 
+
+;关闭加速器
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Activities] 
+"NoActivities"=dword:00000001 
+
+;关闭安全模式
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3] 
+;"2500"=dword:00000000 
+"2500"=dword:00000003 
+
+;不提示保护模式已关闭
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main] 
+"NoProtectedModeBanner"=dword:00000001 
+
+;每个 IE 窗口使用单独进程
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\BrowseNewProcess]
+"BrowseNewProcess"="yes"
+
+;不“检查 Internet Explorer 是否为默认浏览器”
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"Check_Associations"="no"
+
+;IE打开网址方式
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\TabbedBrowsing] 
+;由IE决定
+"PopupsUseNewWindow"=dword:00000000 
+;始终多窗口
+;"PopupsUseNewWindow"=dword:00000001 
+;始终多标签
+;"PopupsUseNewWindow"=dword:00000002
+
+;启动从主页开始
+;[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\ContinuousBrowsing] 
+"Enabled"=dword:00000001 
+;"Enabled"=dword:00000000 
+
+;打开新便签显示新标签页
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\TabbedBrowsing] 
+;"NewTabPageShow"=dword:00000000 
+"NewTabPageShow"=dword:00000002 
+
+;IE开启图像自动缩放
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"Enable AutoImageResize"="yes"
+;
+;IE开启ClearType
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"UseClearType"="yes" 
+;
+;从不进行拨号连接〔避免弹窗〕
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
+"EnableAutodial"=dword:00000000
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
+"EnableAutodial"=dword:00000000
+;
+;自动卸载IE中残留的DLL
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"AlwaysUnloadDLL"=dword:00000001
+
+;把IE可同时下载数目增到10
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
+"MaxConnectionsPer1_0Server"=dword:0000000A
+"MaxConnectionsPerServer"=dword:dword:0000000A
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_MAXCONNECTIONSPERSERVER]
+"iexplore.exe"=dword:0000000A
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_MAXCONNECTIONSPER1_0SERVER]
+"iexplore.exe"=dword:0000000A
+
+;优化网络WINS名查询时间，增强网络数据传输能力，提高网速
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\NetBT\Parameters]
+"NameSrvQueryTimeout"=dword:0000BB8
+;
+;优化网络参数设置，提高网络连接稳定
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\LanmanWorkstation\Parameters]
+"MaxThreads"=dword:0000001E
+"MaxCollectionCount"=dword:00000020
+"MaxCmds"=dword:0000001E
+;
+;优化网络快速转发机制，提高上网速度
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\Tcpip\Parameters]
+"SackOpts"=dword:00000001
+"TcpMaxDupAcks"=dword:00000002           ;优化网络快速转发机制，提高上网速度
+"DefaultTTL"=dword:00000040              ;优化默认分组报文寿命，避免浪费流量，提高网速  
+"EnablePMTUDiscovery"=dword:00000001     ;启用PMTU发现
+"EnablePMTUBHDetect"=dword:00000001      ;启用最大单元大小自动探测、黑洞路由器探测，提高网速
+"Tcp1323Opts"=dword:00000001             ;启用传输单元缓冲区自动调整，加快网络传输速度
+"MaxConnectionsPerServer"=dword:00000000 ;优化网卡性能提高网络效率
+;
+;优化服用域名查询时间
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\VXD\MSTCP]
+"NameSrvQueryTimeout"=dword:00000000
+
+;关闭多个便签不提示
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\TabbedBrowsing] 
+;"WarnOnClose"=dword:00000001 
+"WarnOnClose"=dword:00000000 
+
+;不提示设置默认浏览器
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main] 
+;"Check_Associations"="yes" 
+"Check_Associations"="no" 
+
+;不提示保存密码
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main] 
+"FormSuggest PW Ask"="no" 
+
+;禁用表单自动完成
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer\Main] 
+"Use FormSuggest"="no" 
+
+;禁用自动完成
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer\control Panel]
+"FormSuggest"=dword:00000001 
+
+;从不进行拨号连接
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings] 
+;"EnableAutodial"=dword:00000001 
+"EnableAutodial"=dword:00000000 
+;"NoNetAutodial"=dword:00000001 
+"NoNetAutodial"=dword:00000000 
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections] 
+;"SavedLegacySettings"=hex:46,00,00,00,fc,00,00,00,01,00,00,00,00,00,00,00,00,\
+;   00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+;   00,00,00,00,00,00,00,00,00,00,00,00,00,00 
+"SavedLegacySettings"=hex:46,00,00,00,fe,00,00,00,01,00,00,00,00,00,00,00,00,\
+   00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+   00,00,00,00,00,00,00,00,00,00,00,00,00,00 
+

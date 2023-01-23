@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Keyboard Layout\Preload]
+"1"="00000804"
+
+[HKEY_CURRENT_USER\Keyboard Layout\Substitutes]
+"00000804"="00000409"
+
+[HKEY_USERS\.DEFAULT\Keyboard Layout\Preload]
+"1"="00000804"
+
+[HKEY_USERS\.DEFAULT\Keyboard Layout\Substitutes]
+"00000804"="00000409"
+
+[HKEY_CURRENT_USER\Control Panel\International\User Profile]
+"InputMethodOverride"="0804:00000409"
+
+[HKEY_CURRENT_USER\Control Panel\International\User Profile\zh-Hans-CN]
+"0804:00000409"=dword:00000001

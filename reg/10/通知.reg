@@ -1,0 +1,34 @@
+Windows Registry Editor Version 5.00
+
+;不显示应用通知
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\PushNotifications] 
+;"ToastEnabled"=dword:00000001 
+"ToastEnabled"=dword:00000000 
+
+;锁屏不显示通知
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings] 
+"NOC_GLOBAL_SETTING_ALLOW_TOASTS_ABOVE_LOCK"=dword:00000000 
+
+;锁屏不显示警告
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings] 
+"NOC_GLOBAL_SETTING_ALLOW_CRITICAL_TOASTS_ABOVE_LOCK"=dword:00000000 
+
+;演示时隐藏通知
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings] 
+"NOC_GLOBAL_SETTING_SUPRESS_TOASTS_WHILE_DUPLICATING"=dword:00000001 
+
+;关闭功能气球通知
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer] 
+"NoBalloonFeatureAdvertisements"=dword:00000001 
+
+;关闭所有气球通知
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer] 
+"TaskbarNoNotification"=dword:00000001 
+
+;关闭将通知程序提升到任务栏
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer] 
+"NoSystraySystemPromotion"=dword:00000001 
+
+;禁止将气球通知显示为 Toast
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer] 
+"EnableLegacyBalloonNotifications"=dword:00000001 
