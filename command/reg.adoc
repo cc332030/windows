@@ -1,0 +1,10 @@
+
+= reg
+
+[source,shell]
+----
+reg add <key> [/v <value>] [/t <type>] [/d <data>]
+
+reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\v2ray /v %~dp0app\v2rayN.exe
+
+----
