@@ -1,0 +1,9 @@
+
+= service
+
+[source,shell]
+----
+# 创建服务
+sc create ServiceName binPath=service.exe start=auto
+sc start ServiceName
+----
