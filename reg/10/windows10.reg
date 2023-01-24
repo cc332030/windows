@@ -1,5 +1,9 @@
 Windows Registry Editor Version 5.00
 
+; control userpasswords2 显示“使用此计算机必须输入密码”
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device]
+"DevicePasswordLessBuildVersion"=dword:00000000
+
 ; 禁用微软输入法简繁体转换快捷键（CTRL+SHIFT+F）
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputMethod\Settings\CHS]
 ;"EnableSimplifiedTraditionalOutputSwitch"=dword:00000001
