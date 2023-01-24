@@ -17,11 +17,6 @@ Windows Registry Editor Version 5.00
 
 ;=============================优化==========================================
 
-; 关闭通知
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\PushNotifications]
-;"ToastEnabled"=dword:00000001
-"ToastEnabled"=dword:00000000
-
 ;阻止 Edge 预启动
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main]
 ;"AllowPrelaunch"=dword:00000001
