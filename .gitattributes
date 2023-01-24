@@ -1,4 +1,4 @@
 *.cmd           text working-tree-encoding=UTF-8 eol=crlf
 *.bat           text working-tree-encoding=UTF-8 eol=crlf
 *.vbs           text working-tree-encoding=UTF-8 eol=crlf
-*.reg           text working-tree-encoding=UTF-8 eol=lf
+*.reg           text working-tree-encoding=UTF-16LF eol=lf
