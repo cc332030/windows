@@ -1,0 +1,11 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+
+[*.{cmd,bat,vbs}]
+end_of_line = crlf
+
+[*.reg]
+charset = utf-16le
