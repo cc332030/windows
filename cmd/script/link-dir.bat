@@ -37,7 +37,7 @@ if not exist %target% (
 rd /s /q %target%
 
 echo.
-mklink /d %target% %source%
+mklink /j %target% %source%
 
 set skipParse=true
 
