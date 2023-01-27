@@ -1,0 +1,17 @@
+
+= schtasks
+
+[source,shell]
+----
+set SCHTASKS_NAME=CloudflareST
+
+schtasks /Delete /F /TN %SCHTASKS_NAME%
+
+echo.
+schtasks /Create /F ^
+  /TN %SCHTASKS_NAME% ^
+  /TR %~dp0update-ip.bat ^
+  /ST 00:00 ^
+  /SC HOURLY
+
+----
