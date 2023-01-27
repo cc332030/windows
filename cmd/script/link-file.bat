@@ -48,8 +48,13 @@ if exist %target%\%targetFileName% (
   mkdir %target%
 )
 
+:: 相同磁盘下使用硬链接
+if %source:~0,3%==%target:~0,3% (
+  set MKLINK_PARAMETERS=/h
+)
+
 echo.
-mklink %target%\%targetFileName% %source%\%sourceFileName%
+mklink %MKLINK_PARAMETERS% %target%\%targetFileName% %source%\%sourceFileName%
 
 set skipParse=true
 

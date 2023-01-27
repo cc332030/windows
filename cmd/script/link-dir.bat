@@ -36,8 +36,15 @@ if not exist %target% (
 )
 rd /s /q %target%
 
+:: 相同磁盘下使用硬链接
+if %source:~0,3%==%target:~0,3% (
+  set MKLINK_PARAMETERS=/J
+) else (
+  set MKLINK_PARAMETERS=/D
+)
+
 echo.
-mklink /d %target% %source%
+mklink %MKLINK_PARAMETERS% /d %target% %source%
 
 set skipParse=true
 
