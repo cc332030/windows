@@ -24,10 +24,7 @@ if not defined target (
 )
 
 if not exist %source% (
-  echo.
-  echo 文件夹不存在 %source%
-  pause >nul
-  exit 0
+  mkdir %source%
 )
 
 :: 创建父级目录

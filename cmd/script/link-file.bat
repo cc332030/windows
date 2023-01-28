@@ -35,6 +35,10 @@ if not defined target (
   set existTarget="true"
 )
 
+if not exist %source% (
+  mkdir %source%
+)
+
 if not exist %source%\%sourceFileName% (
   echo.
   echo 不存在文件 %source%\%sourceFileName%
