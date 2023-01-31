@@ -4,20 +4,24 @@ setlocal
 
 %utf8%
 
-set targetFileName=%1
+set source=%1
+set target=%2
 
-set source=%2
-set target=%3
+set sourceFileName=%3
+set targetFileName=%4
+
+if not defined targetFileName (
+  set targetFileName=%sourceFileName%
+)
 
 if not defined targetFileName (
   set existTargetFileName="false"
   echo.
-  set /p targetFileName=请输入源文件名：
+  set /p sourceFileName=请输入源文件名：
+  set targetFileName=%sourceFileName%
 ) else (
   set existTargetFileName="true"
 )
-
-set sourceFileName=%targetFileName%
 
 if not defined source (
   set existSource="false"
