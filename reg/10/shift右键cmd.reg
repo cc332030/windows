@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+; 显示 cmd
+[HKEY_CLASSES_ROOT\Directory\shell\cmd]
+"ShowBasedOnVelocityId"=dword:00639bc8
+"HideBasedOnVelocityId"=-
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cmd]
+"ShowBasedOnVelocityId"=dword:00639bc8
+"HideBasedOnVelocityId"=-
+
+; 隐藏 Powershell
+[HKEY_CLASSES_ROOT\Directory\shell\Powershell]
+"ShowBasedOnVelocityId"=-
+"HideBasedOnVelocityId"=dword:00639bc8
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Powershell]
+"ShowBasedOnVelocityId"=-
+"HideBasedOnVelocityId"=dword:00639bc8
