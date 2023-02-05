@@ -1,5 +1,10 @@
 Windows Registry Editor Version 5.00
 
+; 关闭-在单独的进程中打开文件夹窗口
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+;"SeparateProcess"=dword:00000001
+"SeparateProcess"=dword:00000000
+
 ; control userpasswords2 显示“使用此计算机必须输入密码”
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device]
 "DevicePasswordLessBuildVersion"=dword:00000000
