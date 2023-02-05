@@ -1,7 +1,8 @@
 Windows Registry Editor Version 5.00
 
-;空白右键 打开cmd
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\Background\shell\OpenCmd]
+;cmd
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\OpenCmd]
+[-HKEY_CLASSES_ROOT\Directory\shell\OpenCmd]
 
 ; Cmder
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\Cmder]
