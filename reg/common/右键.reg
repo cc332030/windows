@@ -1,16 +1,16 @@
 Windows Registry Editor Version 5.00
 
 ; cmd
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\OpenCmd]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\c_cmd]
 @="cmd"
 "Icon"="C:\\Windows\\System32\\cmd.exe"
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\OpenCmd\command]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\c_cmd\command]
 @="cmd"
 
-[HKEY_CLASSES_ROOT\Directory\shell\OpenCmd]
+[HKEY_CLASSES_ROOT\Directory\shell\c_cmd]
 @="cmd"
 "Icon"="C:\\Windows\\System32\\cmd.exe"
-[HKEY_CLASSES_ROOT\Directory\shell\OpenCmd\command]
+[HKEY_CLASSES_ROOT\Directory\shell\c_cmd\command]
 @="cmd /s /k pushd \"%V\""
 
 
