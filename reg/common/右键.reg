@@ -31,11 +31,11 @@ Windows Registry Editor Version 5.00
 
 
 ;空白右键 重启资源管理器
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\Background\shell\RestartExplorer]
-@="重启资源管理器"
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\Background\shell\RestartExplorer]
+;@="重启资源管理器"
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\Background\shell\RestartExplorer\Command]
-@="cmd /c taskkill /f /im explorer.exe & start explorer"
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\Background\shell\RestartExplorer\Command]
+;@="cmd /c taskkill /f /im explorer.exe & start explorer"
 
 
 ;右键复制文件路径
