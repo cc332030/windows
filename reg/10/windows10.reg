@@ -1,8 +1,8 @@
 Windows Registry Editor Version 5.00
 
 ; cmd 初始化中文
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor]
-"autorun"="chcp 65001 >nul"
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor]
+;"autorun"="chcp 65001 >nul"
 
 ; 关闭-在单独的进程中打开文件夹窗口
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
