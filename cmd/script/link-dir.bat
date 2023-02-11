@@ -2,8 +2,6 @@
 
 setlocal
 
-%utf8%
-
 set source=%1
 set target=%2
 

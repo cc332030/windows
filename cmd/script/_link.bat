@@ -2,8 +2,6 @@
 
 setlocal
 
-%utf8%
-
 set current_path=%~dp0
 
 set from=%current_path%

@@ -1,7 +1,5 @@
 @echo off
 
-%utf8%
-
 echo.
 set /p msiPath=请输入 msi 文件路径
 
