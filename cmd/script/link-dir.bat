@@ -1,7 +1,5 @@
 @echo off
 
-setlocal
-
 set source=%1
 set target=%2
 
@@ -46,5 +44,3 @@ if false==%existTarget% (
 if false==%skipParse% (
   pause >nul
 )
-
-endlocal
