@@ -396,9 +396,9 @@ Windows Registry Editor Version 5.00
 ;[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive]
 ;"DisableFileSyncNGSC"=dword:00000001
 
-;关闭休眠
-;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
-;"HibernateEnabled"=dword:00000001
+;休眠
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"HibernateEnabled"=dword:00000001
 ;"HibernateEnabled"=dword:00000000
 
 ;关闭自动播放
