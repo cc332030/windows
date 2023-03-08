@@ -1,20 +1,20 @@
 @echo off
 
-set source=%1
-set target=%2
+set source="%1"
+set target="%2"
 
-set sourceFileName=%3
-set targetFileName=%4
+set sourceFileName="%3"
+set targetFileName="%4"
 
 if not defined targetFileName (
-  set targetFileName=%sourceFileName%
+  set targetFileName="%sourceFileName%"
 )
 
 if not defined targetFileName (
   set existTargetFileName="false"
   echo.
   set /p sourceFileName=请输入源文件名：
-  set targetFileName=%sourceFileName%
+  set targetFileName="%sourceFileName%"
 ) else (
   set existTargetFileName="true"
 )
@@ -35,21 +35,21 @@ if not defined target (
   set existTarget="true"
 )
 
-if not exist %source% (
-  mkdir %source%
+if not exist "%source%" (
+  mkdir "%source%"
 )
 
-if not exist %source%\%sourceFileName% (
+if not exist "%source%\%sourceFileName%" (
   echo.
-  echo 不存在文件 %source%\%sourceFileName%
+  echo 不存在文件 "%source%\%sourceFileName%"
   pause >nul
   exit 0
 )
 
-if exist %target%\%targetFileName% (
-  del /f /q %target%\%targetFileName%
-) else if not exist %target% (
-  mkdir %target%
+if exist "%target%\%targetFileName%" (
+  del /f /q "%target%\%targetFileName%"
+) else if not exist "%target%" (
+  mkdir "%target%"
 )
 
 :: 相同磁盘下使用硬链接
@@ -58,7 +58,7 @@ if exist %target%\%targetFileName% (
 :: )
 
 echo.
-mklink %target%\%targetFileName% %source%\%sourceFileName%
+mklink "%target%\%targetFileName%" "%source%\%sourceFileName%"
 
 set skipParse=true
 

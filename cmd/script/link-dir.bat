@@ -1,7 +1,7 @@
 @echo off
 
-set source=%1
-set target=%2
+set source="%1"
+set target="%2"
 
 if not defined source (
   set existSource="false"
@@ -19,18 +19,18 @@ if not defined target (
   set existTarget="true"
 )
 
-if not exist %source% (
-  mkdir %source%
+if not exist "%source%" (
+  mkdir "%source%"
 )
 
 :: 创建父级目录
-if not exist %target% (
-  mkdir %target%
+if not exist "%target%" (
+  mkdir "%target%"
 )
-rd /s /q %target%
+rd /s /q "%target%"
 
 echo.
-mklink /d %target% %source%
+mklink /d "%target%" "%source%"
 
 set skipParse=true
 
