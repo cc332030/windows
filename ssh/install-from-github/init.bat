@@ -12,5 +12,6 @@ powershell.exe -ExecutionPolicy Bypass -File uninstall-sshd.ps1
 powershell.exe -ExecutionPolicy Bypass -File install-sshd.ps1
 
 net start sshd
+sc config sshd start=AUTO
 
 pause >nul
