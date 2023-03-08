@@ -1,5 +1,5 @@
 
-= ssh
+= ssh install use powershell
 
 [source,shell]
 ----
