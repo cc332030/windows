@@ -1,9 +1,14 @@
 Windows Registry Editor Version 5.00
 
-;关闭盖子无操作
-;[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\5CA83367-6E45-459F-A27B-476B1D01C936]
+;关闭盖子
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\5CA83367-6E45-459F-A27B-476B1D01C936]
+;无操作
 ;"ACSettingIndex"=dword:00000000
 ;"DCSettingIndex"=dword:00000000
+
+;休眠
+"ACSettingIndex"=dword:00000002
+"DCSettingIndex"=dword:00000002
 
 ;电源键关机
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\7648EFA3-DD9C-4E3E-B566-50F929386280]
