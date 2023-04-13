@@ -58,7 +58,11 @@ if exist %target%\%targetFileName% (
 :: )
 
 echo.
-mklink %target%\%targetFileName% %source%\%sourceFileName%
+if %target%\%targetFileName%==%source%\%sourceFileName% (
+    echo source equals target: %source%\%sourceFileName%
+) else (
+    mklink %target%\%targetFileName% %source%\%sourceFileName%
+)
 
 set skipParse=true
 

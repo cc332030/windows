@@ -30,7 +30,11 @@ if not exist %target% (
 rd /s /q %target%
 
 echo.
-mklink /d %target% %source%
+if %target%==%source% (
+    echo source equals target: %source%
+) else (
+    mklink /d %target% %source%
+)
 
 set skipParse=true
 
