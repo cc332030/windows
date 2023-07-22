@@ -1,7 +1,7 @@
 Windows Registry Editor Version 5.00
 
 ; 时间同步服务器
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\W32Time\Parameters]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters]
 "NtpServer"="0.pool.ntp.org 1.pool.ntp.org 2.pool.ntp.org 3.pool.ntp.org"
 
 ; cmd 初始化 utf-8
@@ -44,7 +44,7 @@ Windows Registry Editor Version 5.00
 "HideRecentlyAddedApps"=dword:00000001
 
 ;允许空密码远程登录
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Lsa]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
 ;"LimitBlankPasswordUse"=dword:00000001
 "LimitBlankPasswordUse"=dword:00000000
 
@@ -150,7 +150,7 @@ Windows Registry Editor Version 5.00
 ;"LeaveOnWithMouse"=dword:00000000
 
 ;打开内核虚拟化保护 内核隔离
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity]
 "Enabled"=dword:00000000
 ;"Enabled"=dword:00000001
 
@@ -208,7 +208,7 @@ Windows Registry Editor Version 5.00
 ;"EnableFirewall"=dword:00000000
 
 ;关闭防火墙
-;[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile]
+;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile]
 ;"EnableFirewall"=dword:00000001
 ;"EnableFirewall"=dword:00000000
 
@@ -218,12 +218,12 @@ Windows Registry Editor Version 5.00
 ;"EnableFirewall"=dword:00000000
 
 ;关闭防火墙
-;[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile]
+;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile]
 ;"EnableFirewall"=dword:00000001
 ;"EnableFirewall"=dword:00000000
 
 ;关闭防火墙
-;[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile]
+;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile]
 ;"EnableFirewall"=dword:00000001
 ;"EnableFirewall"=dword:00000000
 
@@ -233,7 +233,7 @@ Windows Registry Editor Version 5.00
 ;"EnableFirewall"=dword:00000000
 
 ;禁用程序兼容性助手
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\PcaSvc]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PcaSvc]
 ;"Start"=dword:00000003
 "Start"=dword:00000004
 
@@ -604,7 +604,7 @@ Windows Registry Editor Version 5.00
 "Default Mode"=dword:00000001
 
 ;离开模式
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Power]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
 ;"AwayModeEnabled"=dword:00000000
 "AwayModeEnabled"=dword:00000001
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
@@ -612,7 +612,7 @@ Windows Registry Editor Version 5.00
 "AwayModeEnabled"=dword:00000001
 
 ;资源管理器自动刷新
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Update]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Update]
 ;"UpdateMode"=dword:00000000
 "UpdateMode"=dword:00000001
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Update]
@@ -620,13 +620,13 @@ Windows Registry Editor Version 5.00
 "UpdateMode"=dword:00000001
 
 ;加快多媒体应用程序的运行速度
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\FileSystem]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
 "ConfigFileAllocSize"=dword:000001f4
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
 "ConfigFileAllocSize"=dword:000001f4
 
 ;系统崩溃时记录事件日志
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
 "LogEvent"=dword:00000000
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
 "LogEvent"=dword:00000000
@@ -640,7 +640,7 @@ Windows Registry Editor Version 5.00
 "AutoEndTasks"="1"
 
 ;优化内存配置，加速游戏等软件的运行速度
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Memory Management]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
 "DisablePagingExecutive"=dword:00000001
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
 "DisablePagingExecutive"=dword:00000001
@@ -656,7 +656,7 @@ Windows Registry Editor Version 5.00
 "nonetcrawling"=dword:00000001
 
 ;优化DNS，加快DNS的解析速度
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Dnscache\Parameters]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
 "negativesoacachetime"=dword:00000000
 "netfailurecachetime"=dword:00000000
 "maxcacheentryttllimit"=dword:00002a30
@@ -670,7 +670,7 @@ Windows Registry Editor Version 5.00
 "maxnegativecachettl"=dword:00000000
 
 ;优化网卡性能，提升网络效率
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Tcpip\Parameters]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
 "MaxConnectionsPerServer"=dword:00000000
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
 "MaxConnectionsPerServer"=dword:00000000
@@ -696,7 +696,7 @@ Windows Registry Editor Version 5.00
 "NoDriveTypeAutoRun"=dword:000000dd
 
 ;优化磁盘访问性能，提升磁盘数据的读写能力
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
 ;"AutoChkTimeout"=dword:0000001e
 "AutoChkTimeout"=dword:00000005
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
@@ -865,7 +865,7 @@ Windows Registry Editor Version 5.00
 "WaitToKillServiceTimeout"="2000"
 
 ;禁用远程协助
-[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Remote Assistance]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Remote Assistance]
 "fAllowToGetHelp"=dword:00000000
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Remote Assistance]
 "fAllowToGetHelp"=dword:00000000
