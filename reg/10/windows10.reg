@@ -29,8 +29,10 @@ Windows Registry Editor Version 5.00
 
 ; 任务栏显示秒
 [HKEY_CURRENT_USER\Control Panel\International]
-;"sShortTime"="H:mm"
-"sShortTime"="H:mm:ss"
+"sLongDate"="yyyy年MMMd日, dddd"
+"sShortDate"="yyyy-MM-dd"
+"sTimeFormat"="HH:mm:ss"
+"sShortTime"="HH:mm:ss"
 
 ;=============================优化==========================================
 
