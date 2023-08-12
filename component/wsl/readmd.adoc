@@ -1,6 +1,13 @@
 
 = windows subsystem linux
 
+== install
+[source,shell]
+----
+wsl --list --online
+wsl --install -d Ubuntu
+----
+
 == 默认用户
 [source,shell script]
 ----
