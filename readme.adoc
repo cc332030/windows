@@ -12,3 +12,9 @@ w32tm /config /syncfromflags:manual /manualpeerlist:"0.pool.ntp.org 1.pool.ntp.o
 ----
 gpupdate /force
 ----
+
+Windows10 输入法不显示候选
+[source,shell]
+----
+Add-AppxPackage -Path Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.Appx
+----
