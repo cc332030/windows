@@ -2,10 +2,16 @@
 
 set SSH_PROGRAM_PATH=C:\Program Files\OpenSSH
 
-call link-dir %~dp0app "%SSH_PROGRAM_PATH%"
+set WORK_DIR=%~dp0
+set APP=%WORK_DIR%app
+set DATA=%WORK_DIR%data
+
+call link-dir %APP% "%SSH_PROGRAM_PATH%"
 ::call link-dir %~dp0config "%programdata%\ssh"
 
-call link-dir %~dp0data %userprofile%\.ssh
+call link-dir %DATA% %userprofile%\.ssh
+
+call link-file %DATA% %APP% sshd_config
 
 net stop sshd
 
