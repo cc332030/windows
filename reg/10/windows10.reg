@@ -1,8 +1,12 @@
 Windows Registry Editor Version 5.00
 
+; 时间同步频率，一小时一次
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient]
+"SpecialPollInterval"=dword:00000e10
+
 ; 时间同步服务器
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters]
-"NtpServer"="0.pool.ntp.org 1.pool.ntp.org 2.pool.ntp.org 3.pool.ntp.org"
+"NtpServer"="ntp.aliyun.com"
 
 ; cmd 初始化 utf-8
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor]
