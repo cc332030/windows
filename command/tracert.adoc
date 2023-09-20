@@ -1,0 +1,9 @@
+
+= tracert
+
+等同于 traceroute
+
+[source,shell]
+----
+tracert c332030.com
+----
