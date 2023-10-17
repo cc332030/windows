@@ -12,11 +12,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor]
 "autorun"="chcp 65001 >nul"
 
-; 关闭-在单独的进程中打开文件夹窗口
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-;"SeparateProcess"=dword:00000001
-"SeparateProcess"=dword:00000000
-
 ; control userpasswords2 显示“使用此计算机必须输入密码”
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device]
 "DevicePasswordLessBuildVersion"=dword:00000000
@@ -54,11 +49,6 @@ Windows Registry Editor Version 5.00
 ;"LimitBlankPasswordUse"=dword:00000001
 "LimitBlankPasswordUse"=dword:00000000
 
-;允许空密码远程登录
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
-;"LimitBlankPasswordUse"=dword:00000001
-"LimitBlankPasswordUse"=dword:00000000
-
 ;删除 文件 右键使用 Windows Defender 扫描
 [-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\EPP]
 ;@="{09A47860-11B0-4DA5-AFA5-26D86198A780}"
@@ -76,11 +66,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\GameDVR]
 ;"VideoEncodingFrameRateMode"=dword:00000000
 "VideoEncodingFrameRateMode"=dword:00000001
-
-;将任务栏图标显示在主任务栏和打开了窗口的任务栏
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-;所有任务栏
-;"MMTaskbarMode"=dword:00000000
 
 ;主任务栏和打开了窗口的任务栏
 "MMTaskbarMode"=dword:00000001
@@ -106,11 +91,6 @@ Windows Registry Editor Version 5.00
 ;"AccentColor"=dword:ff107c10
 "AccentColor"=dword:ff5f737e
 
-;不显示小娜图标
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-;"ShowCortanaButton"=dword:00000001
-"ShowCortanaButton"=dword:00000000
-
 ;禁用 DNS 域网络上的 internet 连接共享，会导致无法开启热点
 ;[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Network Connections]
 ;"NC_ShowSharedAccessUI"=dword:00000000
@@ -131,11 +111,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
 "LongPathsEnabled"=dword:00000001
 
-; Win + X 不显示 PowerShell
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-;"DontUsePowerShellOnWinX"=dword:00000000
-"DontUsePowerShellOnWinX"=dword:00000001
-
 ;壁纸显示效果
 [HKEY_CURRENT_USER\Control Panel\Desktop]
 
@@ -154,11 +129,6 @@ Windows Registry Editor Version 5.00
 ;[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PrecisionTouchPad]
 ;"LeaveOnWithMouse"=dword:ffffffff
 ;"LeaveOnWithMouse"=dword:00000000
-
-;打开内核虚拟化保护 内核隔离
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity]
-"Enabled"=dword:00000000
-;"Enabled"=dword:00000001
 
 ;打开内核虚拟化保护 内核隔离
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity]
@@ -203,50 +173,16 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Control Panel\Keyboard]
 "InitialKeyboardIndicators"="2"
 
-;单独进程打开文件夹
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-;"SeparateProcess"=dword:00000000
-"SeparateProcess"=dword:00000001
-
 ;关闭防火墙
 ;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile]
 ;"EnableFirewall"=dword:00000001
 ;"EnableFirewall"=dword:00000000
-
-;关闭防火墙
-;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile]
-;"EnableFirewall"=dword:00000001
-;"EnableFirewall"=dword:00000000
-
-;关闭防火墙
 ;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile]
 ;"EnableFirewall"=dword:00000001
 ;"EnableFirewall"=dword:00000000
-
-;关闭防火墙
-;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile]
-;"EnableFirewall"=dword:00000001
-;"EnableFirewall"=dword:00000000
-
-;关闭防火墙
 ;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile]
 ;"EnableFirewall"=dword:00000001
 ;"EnableFirewall"=dword:00000000
-
-;关闭防火墙
-;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile]
-;"EnableFirewall"=dword:00000001
-;"EnableFirewall"=dword:00000000
-
-;禁用程序兼容性助手
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PcaSvc]
-;"Start"=dword:00000003
-"Start"=dword:00000004
-
-;禁用程序兼容性助手
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PcaSvc]
-;"Start"=dword:00000003
-"Start"=dword:00000004
 
 ;禁用自动维护计划
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\ScheduledDiagnostics]
@@ -275,20 +211,11 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
 "AppsUseLightTheme"=dword:00000000
 
-;不显示人脉
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People]
-"PeopleBand"=dword:00000000
-
-;不显示任务视图
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"ShowTaskViewButton"=dword:00000000
-
 ;右键记事本打开
 [HKEY_CLASSES_ROOT\*\shell\Notepad]
 @="记事本打开"
 [HKEY_CLASSES_ROOT\*\shell\Notepad\Command]
 @="notepad %1"
-
 
 ;删除右键共享访问权限
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked]
@@ -329,10 +256,6 @@ Windows Registry Editor Version 5.00
 ;"WindowArrangementActive"="1"
 "WindowArrangementActive"="0"
 
-;不自动展开打开的目录
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"NavPaneExpandToCurrentFolder"=dword:00000000
-
 ;禁用自动更新
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
 ;"NoAutoUpdate"=dword:00000000
@@ -346,11 +269,6 @@ Windows Registry Editor Version 5.00
 ;更新不包括恶意软件删除工具
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
 "DontOfferThroughWUAU"=dword:00000001
-
-;禁止突出新安装的程序
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-;"Start_NotifyNewApps"=dword:00000001
-"Start_NotifyNewApps"=dword:00000000
 
 ;关闭实时保护
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection]
@@ -388,10 +306,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
 "ConsentPromptBehaviorAdmin"=dword:00000000
 "PromptOnSecureDesktop"=dword:00000000
-
-;关闭任务视图
-;[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-;"ShowTaskViewButton"=dword:00000000
 
 ;关闭体验改善计划
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient\Windows]
@@ -443,7 +357,7 @@ Windows Registry Editor Version 5.00
 "sLongDate"="yyyy'年'M'月' dddd"
 
 ;删除美国键盘
-;[HKEY_CURRENT_USER\Control?Panel\International\User?Profile\zh-Hans-CN]
+;[HKEY_CURRENT_USER\Control Panel\International\User Profile\zh-Hans-CN]
 ;"0804:00000409"=dword:00000001
 
 ;Onedrive 不自动启动
@@ -506,10 +420,14 @@ Windows Registry Editor Version 5.00
 ;"CortanaMUID"="MUID=e1f3e6bd290d4cf8906024d599d5e39b"
 "CortanaMUID"="MUID=a5856ab03c79415cb40b42a6e34036b6"
 
-
 ;禁用帮助提示
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EdgeUI]
 "DisableHelpSticker"=dword:00000001
+
+;禁用程序兼容性助手
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PcaSvc]
+;"Start"=dword:00000003
+"Start"=dword:00000004
 
 ;关闭应用程序兼容性引擎
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
@@ -537,12 +455,6 @@ Windows Registry Editor Version 5.00
 ;"WindowsEffect"="1"
 "WindowsEffect"="0"
 
-
-;打开资源管理器访问此电脑
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"LaunchTo"=dword:00000001
-
-
 ;取消系统保留带宽
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched]
 "NonBestEffortLimit"=dword:00000000
@@ -560,7 +472,6 @@ Windows Registry Editor Version 5.00
 "QuickLaunchShortcut"="no"
 
 ;阻止 WMP 创建桌面图标
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsMediaPlayer]
 "DesktopShortcut"="no"
 
 ;禁止 Windows Messenger 运行
@@ -578,10 +489,68 @@ Windows Registry Editor Version 5.00
 ;"Start_TrackProgs"=dword:00000000
 
 ;不在开始 菜单显示最近打开的项
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "Start_TrackDocs"=dword:00000001
 ;"Start_TrackDocs"=dword:00000000
 
+;任务栏占满才合并
+"TaskbarGlomLevel"=dword:00000000
+;"TaskbarGlomLevel"=dword:00000001
+
+;优化局域网连接
+;"nonetcrawling"=dword:00000000
+"nonetcrawling"=dword:00000001
+
+;优化窗口菜单与列表的视觉效果，提高系统运行速度
+;"ListviewAlphaSelect"=dword:00000001
+"ListviewAlphaSelect"=dword:00000000
+;"TaskbarAnimations"=dword:00000001
+"TaskbarAnimations"=dword:00000000
+
+;显示隐藏文件
+"Hidden"=dword:00000001
+"HideFileExt"=dword:00000000
+"ShowSuperHidden"=dword:00000001
+"AlwaysShowMenus"=dword:00000001
+
+; 关闭-在单独的进程中打开文件夹窗口
+;"SeparateProcess"=dword:00000001
+"SeparateProcess"=dword:00000000
+
+;将任务栏图标显示在主任务栏和打开了窗口的任务栏
+;所有任务栏
+;"MMTaskbarMode"=dword:00000000
+
+;不显示小娜图标
+;"ShowCortanaButton"=dword:00000001
+"ShowCortanaButton"=dword:00000000
+
+; Win + X 不显示 PowerShell
+;"DontUsePowerShellOnWinX"=dword:00000000
+"DontUsePowerShellOnWinX"=dword:00000001
+
+;单独进程打开文件夹
+;"SeparateProcess"=dword:00000000
+"SeparateProcess"=dword:00000001
+
+;不显示任务视图
+"ShowTaskViewButton"=dword:00000000
+
+;不自动展开打开的目录
+"NavPaneExpandToCurrentFolder"=dword:00000000
+
+;禁止突出新安装的程序
+;"Start_NotifyNewApps"=dword:00000001
+"Start_NotifyNewApps"=dword:00000000
+
+;关闭任务视图
+;"ShowTaskViewButton"=dword:00000000
+
+;打开资源管理器访问此电脑
+"LaunchTo"=dword:00000001
+
+;不显示人脉
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People]
+"PeopleBand"=dword:00000000
 
 ;================================================================================
 
@@ -593,11 +562,6 @@ Windows Registry Editor Version 5.00
 ;风险文件提醒
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Associations]
 "LowRiskFileTypes"=".exe;.bat;.cmd;.com;.reg;.msi;.chm;.crt;.js;"
-
-;任务栏占满才合并
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"TaskbarGlomLevel"=dword:00000000
-;"TaskbarGlomLevel"=dword:00000001
 
 ;快捷方式不加快捷方式后缀
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
@@ -613,14 +577,8 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
 ;"AwayModeEnabled"=dword:00000000
 "AwayModeEnabled"=dword:00000001
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
-;"AwayModeEnabled"=dword:00000000
-"AwayModeEnabled"=dword:00000001
 
 ;资源管理器自动刷新
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Update]
-;"UpdateMode"=dword:00000000
-"UpdateMode"=dword:00000001
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Update]
 ;"UpdateMode"=dword:00000000
 "UpdateMode"=dword:00000001
@@ -628,26 +586,18 @@ Windows Registry Editor Version 5.00
 ;加快多媒体应用程序的运行速度
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
 "ConfigFileAllocSize"=dword:000001f4
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
-"ConfigFileAllocSize"=dword:000001f4
 
 ;系统崩溃时记录事件日志
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
-"LogEvent"=dword:00000000
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
 "LogEvent"=dword:00000000
 
 ;缩短因错误程序导致的鼠标键盘失灵的时间
 [HKEY_CURRENT_USER\Control Panel\Desktop]
 "HungAppTimeout"="3000"
-
 ;自动结束任务
-[HKEY_CURRENT_USER\Control Panel\Desktop]
 "AutoEndTasks"="1"
 
 ;优化内存配置，加速游戏等软件的运行速度
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
-"DisablePagingExecutive"=dword:00000001
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
 "DisablePagingExecutive"=dword:00000001
 
@@ -655,11 +605,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
 ;"NoLowDiskSpaceChecks"=dword:00000000
 "NoLowDiskSpaceChecks"=dword:00000001
-
-;优化局域网连接
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-;"nonetcrawling"=dword:00000000
-"nonetcrawling"=dword:00000001
 
 ;优化DNS，加快DNS的解析速度
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
@@ -670,8 +615,6 @@ Windows Registry Editor Version 5.00
 "maxnegativecachettl"=dword:00000000
 
 ;优化网卡性能，提升网络效率
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
-"MaxConnectionsPerServer"=dword:00000000
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
 "MaxConnectionsPerServer"=dword:00000000
 
@@ -699,9 +642,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
 ;"AutoChkTimeout"=dword:0000001e
 "AutoChkTimeout"=dword:00000005
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
-;"AutoChkTimeout"=dword:0000001e
-"AutoChkTimeout"=dword:00000005
 
 ;加大系统的图标缓冲，提高系统开机速度
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
@@ -711,13 +651,6 @@ Windows Registry Editor Version 5.00
 ;优化Windows文件列表刷新策略
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
 "NoSimpleNetIDList"=dword:00000001
-
-;优化窗口菜单与列表的视觉效果，提高系统运行速度
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-;"ListviewAlphaSelect"=dword:00000001
-"ListviewAlphaSelect"=dword:00000000
-;"TaskbarAnimations"=dword:00000001
-"TaskbarAnimations"=dword:00000000
 
 ;加快任务栏窗口预览显示速度
 [HKEY_CURRENT_USER\Control Panel\Mouse]
@@ -797,12 +730,6 @@ Windows Registry Editor Version 5.00
 @="regsvr32 /u %1"
 
 ;=======================================================================
-;显示隐藏文件
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"Hidden"=dword:00000001
-"HideFileExt"=dword:00000000
-"ShowSuperHidden"=dword:00000001
-"AlwaysShowMenus"=dword:00000001
 
 ;桌面图标
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
@@ -840,24 +767,20 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Installer]
 "LimitSystemRestoreCheckpointing"=dword:00000001
 
-;禁止 SmartScreen
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
-"EnableSmartScreen"=dword:00000000
-
-;IE关闭SmartScreen
+;IE 关闭 SmartScreen
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\PhishingFilter]
 "EnabledV9"=dword:00000000
 
-;Edge关闭SmartScreen
+;Edge 关闭S martScreen
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter]
 "EnabledV9"=dword:00000000
-
-;Edge忽略SmartScreen
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter]
+;Edge 忽略 SmartScreen
 "PreventOverride"=dword:00000000
 
-;加快关机
+;禁止 SmartScreen
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableSmartScreen"=dword:00000000
+;加快关机
 "AllowBlockingAppsAtShutdown"=dword:00000000
 
 ;加快关机速度
@@ -865,8 +788,6 @@ Windows Registry Editor Version 5.00
 "WaitToKillServiceTimeout"="2000"
 
 ;禁用远程协助
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Remote Assistance]
-"fAllowToGetHelp"=dword:00000000
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Remote Assistance]
 "fAllowToGetHelp"=dword:00000000
 
