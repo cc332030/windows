@@ -17,7 +17,7 @@ Windows Registry Editor Version 5.00
 "DevicePasswordLessBuildVersion"=dword:00000000
 
 ; 禁用微软输入法简繁体转换快捷键（CTRL+SHIFT+F）
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputMethod\Settings\CHS]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\InputMethod\Settings\CHS]
 ;"EnableSimplifiedTraditionalOutputSwitch"=dword:00000001
 "EnableSimplifiedTraditionalOutputSwitch"=dword:00000000
 
@@ -27,7 +27,7 @@ Windows Registry Editor Version 5.00
 "AnonymousGid"=dword:00000000
 
 ; 任务栏显示秒
-[HKEY_CURRENT_USER\Control Panel\International]
+[HKEY_USERS\.DEFAULT\Control Panel\International]
 "sLongDate"="yyyy年MMMd日, dddd"
 "sShortDate"="yyyy-MM-dd"
 "sTimeFormat"="HH:mm:ss"
@@ -58,12 +58,12 @@ Windows Registry Editor Version 5.00
 ;@="{09A47860-11B0-4DA5-AFA5-26D86198A780}"
 
 ;屏幕录制 视频质量：高
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\GameDVR]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\GameDVR]
 "VideoEncodingBitrateMode"=dword:00000002
 ;"VideoEncodingBitrateMode"=dword:00000001
 
 ;屏幕录制 60 FPS
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\GameDVR]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\GameDVR]
 ;"VideoEncodingFrameRateMode"=dword:00000000
 "VideoEncodingFrameRateMode"=dword:00000001
 
@@ -74,7 +74,7 @@ Windows Registry Editor Version 5.00
 "MMTaskbarMode"=dword:00000002
 
 ;主题色
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Accent]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Accent]
 ;"AccentPalette"=hex:90,d6,90,00,61,ba,61,00,3d,9c,3d,00,10,7c,10,00,0c,5c,0c, 00,09,42,09,00,02,26,02,00,4c,4a,48,00
 "AccentPalette"=hex:d6,c3,a3,00,bd,ac,8f,00,a0,92,79,00,7e,73,5f,00,5e,56,47,00,45,3d,30,00,36,2f,24,00,00,b7,c3,00
 ;"StartColorMenu"=dword:ff0c5c0c
@@ -83,7 +83,7 @@ Windows Registry Editor Version 5.00
 "AccentColorMenu"=dword:ff5f737e
 
 ;主题色
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\DWM]
 ;"ColorizationColor"=dword:c4107c10
 "ColorizationColor"=dword:c47e735f
 ;"ColorizationAfterglow"=dword:c4107c10
@@ -112,7 +112,7 @@ Windows Registry Editor Version 5.00
 "LongPathsEnabled"=dword:00000001
 
 ;壁纸显示效果
-[HKEY_CURRENT_USER\Control Panel\Desktop]
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop]
 ; 拉伸，显示全，但是会变形
 ;"WallpaperStyle"="2"
 
@@ -120,12 +120,12 @@ Windows Registry Editor Version 5.00
 "WallpaperStyle"="10"
 
 ; 不允许使用快捷键启动粘滞键
-[HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
+[HKEY_USERS\.DEFAULT\Control Panel\Accessibility\StickyKeys]
 ;"Flags"="510"
 "Flags"="506"
 
 ;插入鼠标关闭触控板
-;[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PrecisionTouchPad]
+;[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\PrecisionTouchPad]
 ;"LeaveOnWithMouse"=dword:ffffffff
 ;"LeaveOnWithMouse"=dword:00000000
 
@@ -135,7 +135,7 @@ Windows Registry Editor Version 5.00
 ;"Enabled"=dword:00000001
 
 ;打开查找我的设备
-[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows\Pen\PLOC\Settings]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows NT\CurrentVersion\Windows\Pen\PLOC\Settings]
 ;"TrackingEnabled"=dword:00000000
 "TrackingEnabled"=dword:00000001
 
@@ -169,7 +169,7 @@ Windows Registry Editor Version 5.00
 "InitialKeyboardIndicators"="2"
 
 ;自动打开小键盘
-[HKEY_CURRENT_USER\Control Panel\Keyboard]
+[HKEY_USERS\.DEFAULT\Control Panel\Keyboard]
 "InitialKeyboardIndicators"="2"
 
 ;关闭防火墙
@@ -188,26 +188,26 @@ Windows Registry Editor Version 5.00
 "EnabledExecution"=dword:00000000
 
 ;控制台 20 透明
-[HKEY_CURRENT_USER\Console\%SystemRoot%_system32_cmd.exe]
+[HKEY_USERS\.DEFAULT\Console\%SystemRoot%_system32_cmd.exe]
 "WindowAlpha"=dword:000000cd
 
 ;开启剪切板历史记录
-[HKEY_CURRENT_USER\Software\Microsoft\Clipboard]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Clipboard]
 ;"EnableClipboardHistory"=dword:00000000
 "EnableClipboardHistory"=dword:00000001
 
 ;标题栏和窗口边框 显示主题色
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\DWM]
 ;"ColorPrevalence"=dword:00000000
 "ColorPrevalence"=dword:00000001
 
 ;开始菜单、任务栏和操作中心 显示主题色
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
 ;"ColorPrevalence"=dword:00000000
 "ColorPrevalence"=dword:00000001
 
 ;暗色背景
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
 "AppsUseLightTheme"=dword:00000000
 
 ;右键记事本打开
@@ -221,11 +221,11 @@ Windows Registry Editor Version 5.00
 "{F81E9010-6EA4-11CE-A7FF-00AA003CA9F6}"=""
 
 ;隐藏安全及维护
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
 "HideSCAHealth"=dword:00000001
 
 ;快速访问显示最近文件和文件夹
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer]
 "ShowRecent"=dword:00000001
 "ShowFrequent"=dword:00000001
 
@@ -234,7 +234,7 @@ Windows Registry Editor Version 5.00
 ;"NoLockScreen"=dword:00000001
 
 ;保存最近打开的文档
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
 "NoRecentDocsHistory"=-
 
 ;关闭用户体验改善计划
@@ -242,16 +242,16 @@ Windows Registry Editor Version 5.00
 "CEIPEnable"=dword:00000000
 
 ;不显示有关 Windows 的提示
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
 ;"SoftLandingEnabled"=dword:00000001
 "SoftLandingEnabled"=dword:00000000
 
 ;删除通知和操作
-[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Policies\Microsoft\Windows\Explorer]
 "DisableNotificationCenter"=dword:00000001
 
 ;不自动排列在角落的窗口
-[HKEY_CURRENT_USER\Control Panel\Desktop]
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop]
 ;"WindowArrangementActive"="1"
 "WindowArrangementActive"="0"
 
@@ -311,7 +311,7 @@ Windows Registry Editor Version 5.00
 "CEIPEnable"=dword:00000000
 
 ;状态栏不显示搜索图标
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Search]
 ;"SearchboxTaskbarMode"=dword:00000001
 "SearchboxTaskbarMode"=dword:00000000
 
@@ -334,7 +334,7 @@ Windows Registry Editor Version 5.00
 "DisableAutoplay"=dword:00000001
 
 ;关闭所有自动播放
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers]
 "DisableAutoplay"=dword:00000001
 
 ;关闭时间同步
@@ -348,7 +348,7 @@ Windows Registry Editor Version 5.00
 ;"Start"=dword:00000004
 
 ;一周的第一天 星期日
-[HKEY_CURRENT_USER\Control Panel\International]
+[HKEY_USERS\.DEFAULT\Control Panel\International]
 ;"iFirstDayOfWeek"="0"
 "iFirstDayOfWeek"="6"
 "sDate"="-"
@@ -356,11 +356,11 @@ Windows Registry Editor Version 5.00
 "sLongDate"="yyyy'年'M'月' dddd"
 
 ;删除美国键盘
-;[HKEY_CURRENT_USER\Control Panel\International\User Profile\zh-Hans-CN]
+;[HKEY_USERS\.DEFAULT\Control Panel\International\User Profile\zh-Hans-CN]
 ;"0804:00000409"=dword:00000001
 
 ;Onedrive 不自动启动
-;[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run]
+;[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run]
 ;"OneDrive"=hex:02,00,00,00,00,00,00,00,00,00,00,00
 ;"OneDrive"=hex:03,00,00,00,7c,73,88,55,4d,6c,d1,01
 
@@ -369,12 +369,12 @@ Windows Registry Editor Version 5.00
 "AutoUpdateEnabled"=dword:00000000
 
 ;不允许应用使用我的广告标识
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\AdvertisingInfo]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\AdvertisingInfo]
 ;"Enabled"=dword:00000001
 "Enabled"=dword:00000000
 
 ;关闭 SmartScreen
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost]
 ;"EnableWebContentEvaluation"=dword:00000001
 "EnableWebContentEvaluation"=dword:00000000
 
@@ -383,12 +383,12 @@ Windows Registry Editor Version 5.00
 "SmartScreenEnabled"="Off"
 
 ;不向 Microsoft 发送我的写作习惯
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Input\TIPC]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Input\TIPC]
 ;"Enabled"=dword:00000001
 "Enabled"=dword:00000000
 
 ;不向 Microsoft 反馈
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Siuf\Rules]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Siuf\Rules]
 "NumberOfSIUFInPeriod"=dword:00000000
 
 ;关闭 Windows 客户体验改善计划
@@ -401,21 +401,21 @@ Windows Registry Editor Version 5.00
 "AllowTelemetry"=dword:00000001
 
 ;停止了解我
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputMethod\JPN\roaming]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\InputMethod\JPN\roaming]
 ;"InvalidateTime"=hex(b):50,35,51,fd,03,6e,d1,01
 "InvalidateTime"=hex(b):00,b2,5d,00,04,6e,d1,01
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputPersonalization]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\InputPersonalization]
 ;"RestrictImplicitTextCollection"=dword:00000000
 "RestrictImplicitTextCollection"=dword:00000001
 ;"RestrictImplicitInkCollection"=dword:00000000
 "RestrictImplicitInkCollection"=dword:00000001
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\InputPersonalization\TrainedDataStore]
 ;"HarvestContacts"=dword:00000001
 "HarvestContacts"=dword:00000000
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Personalization\Settings]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Personalization\Settings]
 ;"AcceptedPrivacyPolicy"=dword:00000001
 "AcceptedPrivacyPolicy"=dword:00000000
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
 ;"CortanaMUID"="MUID=e1f3e6bd290d4cf8906024d599d5e39b"
 "CortanaMUID"="MUID=a5856ab03c79415cb40b42a6e34036b6"
 
@@ -437,20 +437,20 @@ Windows Registry Editor Version 5.00
 "EnableFirstLogonAnimation"=dword:00000000
 
 ;显示 Windows 背景
-;[HKEY_CURRENT_USER\Control Panel\Desktop]
+;[HKEY_USERS\.DEFAULT\Control Panel\Desktop]
 ;"UserPreferencesMask"=hex:9e,1e,07,80,13,00,00,00
 ;"UserPreferencesMask"=hex:9e,1e,07,80,12,00,00,00
 
 ;不在 Windows 中播放动画，允许每个应用窗口使用不同的输入法
-[HKEY_CURRENT_USER\Control Panel\Desktop]
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop]
 "UserPreferencesMask"=hex:90,12,07,80,90,00,00,00
 
-[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop\WindowMetrics]
 ;"MinAnimate"="1"
 "MinAnimate"="0"
 
 ;关闭声音的视觉通知
-[HKEY_CURRENT_USER\Control Panel\Accessibility\SoundSentry]
+[HKEY_USERS\.DEFAULT\Control Panel\Accessibility\SoundSentry]
 ;"WindowsEffect"="1"
 "WindowsEffect"="0"
 
@@ -478,12 +478,12 @@ Windows Registry Editor Version 5.00
 "PreventRun"=dword:00000001
 
 ;不在开始 菜单显示建议
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
 ;"SystemPaneSuggestionsEnabled"=dword:00000001
 "SystemPaneSuggestionsEnabled"=dword:00000000
 
 ;不显示最常用的应用
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "Start_TrackProgs"=dword:00000001
 ;"Start_TrackProgs"=dword:00000000
 
@@ -548,7 +548,7 @@ Windows Registry Editor Version 5.00
 "LaunchTo"=dword:00000001
 
 ;不显示人脉
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People]
 "PeopleBand"=dword:00000000
 
 ;================================================================================
@@ -559,16 +559,16 @@ Windows Registry Editor Version 5.00
 "FilterAdministratorToken"=dword:00000000
 
 ;风险文件提醒
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Associations]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Policies\Associations]
 "LowRiskFileTypes"=".exe;.bat;.cmd;.com;.reg;.msi;.chm;.crt;.js;"
 
 ;快捷方式不加快捷方式后缀
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer]
 ;"link"=hex:1e,00,00,00
 "link"=hex:00,00,00,00
 
 ;输入法默认英文
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputMethod\Settings\CHS]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\InputMethod\Settings\CHS]
 ;"Default Mode"=dword:00000000
 "Default Mode"=dword:00000001
 
@@ -591,7 +591,7 @@ Windows Registry Editor Version 5.00
 "LogEvent"=dword:00000000
 
 ;缩短因错误程序导致的鼠标键盘失灵的时间
-[HKEY_CURRENT_USER\Control Panel\Desktop]
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop]
 "HungAppTimeout"="3000"
 ;自动结束任务
 "AutoEndTasks"="1"
@@ -601,7 +601,7 @@ Windows Registry Editor Version 5.00
 "DisablePagingExecutive"=dword:00000001
 
 ;优化内存配置
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
 ;"NoLowDiskSpaceChecks"=dword:00000000
 "NoLowDiskSpaceChecks"=dword:00000001
 
@@ -623,7 +623,7 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MAXCONNECTIONSPERSERVER]
 "iexplore.exe"=dword:0000000a
 
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
 "MaxConnectionsPerServer"=dword:0000000a
 "MaxConnectionsPer1_0Server"=dword:0000000a
 
@@ -633,7 +633,7 @@ Windows Registry Editor Version 5.00
 "Auto"="0"
 
 ;禁止U盘等移动设备的自动播放，防止被病毒感染
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
 ;"NoDriveTypeAutoRun"=dword:00000091
 "NoDriveTypeAutoRun"=dword:000000dd
 
@@ -648,16 +648,16 @@ Windows Registry Editor Version 5.00
 "Max Cached Icons"="2000"
 
 ;优化Windows文件列表刷新策略
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
 "NoSimpleNetIDList"=dword:00000001
 
 ;加快任务栏窗口预览显示速度
-[HKEY_CURRENT_USER\Control Panel\Mouse]
+[HKEY_USERS\.DEFAULT\Control Panel\Mouse]
 ;"MouseHoverTime"="400"
 "MouseHoverTime"="100"
 
 ;任务栏不显示所有图标
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer]
 "EnableAutoTray"=dword:00000001
 
 ;=============================右键==========================================
@@ -731,27 +731,27 @@ Windows Registry Editor Version 5.00
 ;=======================================================================
 
 ;桌面图标
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
 "{59031a47-3f72-44a7-89c5-5595fe6b30ee}"=dword:00000001
 "{20D04FE0-3AEA-1069-A2D8-08002B30309D}"=dword:00000000
 "{B416D21B-3B22-B6D4-BBD3-BBD452DB3D5B}"=dword:00000001
 
 ;删除桌面图标
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
 "{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}"=dword:00000001
 
 ;隐藏回收站
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
 "{645FF040-5081-101B-9F08-00AA002F954E}"=dword:00000000
 ;"{645FF040-5081-101B-9F08-00AA002F954E}"=dword:00000001
 
 ;隐藏回收站
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
 "{645FF040-5081-101B-9F08-00AA002F954E}"=dword:00000000
 ;"{645FF040-5081-101B-9F08-00AA002F954E}"=dword:00000001
 
 ;记事本自动换行
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Notepad]
+[HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Notepad]
 "fWrap"=dword:00000001
 
 ;关闭未签名驱动弹窗
