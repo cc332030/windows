@@ -666,13 +666,7 @@ Windows Registry Editor Version 5.00
 "negativesoacachetime"=dword:00000000
 "netfailurecachetime"=dword:00000000
 "maxcacheentryttllimit"=dword:00002a30
-"maxcachettl"=dword:00002a30
-"maxnegativecachettl"=dword:00000000
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters]
-"negativesoacachetime"=dword:00000000
-"netfailurecachetime"=dword:00000000
-"maxcacheentryttllimit"=dword:00002a30
-"maxcachettl"=dword:00002a30
+"maxcachettl"=dword:00000e10
 "maxnegativecachettl"=dword:00000000
 
 ;优化网卡性能，提升网络效率
