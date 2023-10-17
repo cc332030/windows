@@ -113,7 +113,6 @@ Windows Registry Editor Version 5.00
 
 ;壁纸显示效果
 [HKEY_CURRENT_USER\Control Panel\Desktop]
-
 ; 拉伸，显示全，但是会变形
 ;"WallpaperStyle"="2"
 
@@ -786,6 +785,10 @@ Windows Registry Editor Version 5.00
 ;加快关机速度
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
 "WaitToKillServiceTimeout"="2000"
+
+; 禁止应用程序阻止关机
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop]
+"AutoEndTasks"="1"
 
 ;禁用远程协助
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Remote Assistance]
