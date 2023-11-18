@@ -1,5 +1,9 @@
 Windows Registry Editor Version 5.00
 
+; 关闭网络状态检测
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator]
+"NoActiveProbe"=dword:00000001
+
 ; 时间同步频率，一小时一次
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient]
 "SpecialPollInterval"=dword:00000258
