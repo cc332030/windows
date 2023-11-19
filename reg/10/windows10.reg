@@ -11,13 +11,13 @@ Windows Registry Editor Version 5.00
 ; 时间同步服务器
 ; w32tm /config /update
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters]
-"NtpServer"="ntp.aliyun.com,0x9"
+"NtpServer"="ntp.aliyun.com,0x8"
 
-; 最小同步时间
-; [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Config]
-; "MinPollInterval"=dword:0000000a
-; "MaxPollInterval"=dword:0000000a
-; "HoldPeriod"=dword:0000000a
+; 最小同步时间，2的几次方
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Config]
+"MinPollInterval"=dword:00000007
+"MaxPollInterval"=dword:0000000a
+"HoldPeriod"=dword:0000000a
 
 ; cmd 初始化 utf-8
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor]
