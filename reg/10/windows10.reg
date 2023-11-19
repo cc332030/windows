@@ -15,7 +15,7 @@ Windows Registry Editor Version 5.00
 
 ; 最小同步时间，2的几次方
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Config]
-"MinPollInterval"=dword:00000007
+"MinPollInterval"=dword:00000009
 "MaxPollInterval"=dword:0000000a
 "HoldPeriod"=dword:0000000a
 
