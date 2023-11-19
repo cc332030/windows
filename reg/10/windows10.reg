@@ -9,8 +9,15 @@ Windows Registry Editor Version 5.00
 "SpecialPollInterval"=dword:00000258
 
 ; 时间同步服务器
+; w32tm /config /update
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters]
-"NtpServer"="ntp.aliyun.com"
+"NtpServer"="ntp.aliyun.com,0x9"
+
+; 最小同步时间
+; [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Config]
+; "MinPollInterval"=dword:0000000a
+; "MaxPollInterval"=dword:0000000a
+; "HoldPeriod"=dword:0000000a
 
 ; cmd 初始化 utf-8
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor]
