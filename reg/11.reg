@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+:: 完全禁用搜索 ui
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"DisableSearch"=dword:00000001
