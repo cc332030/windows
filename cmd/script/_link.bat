@@ -10,3 +10,5 @@ call %current_path%\link-file.bat %from% %to% link-dir.bat
 call %current_path%\link-file.bat %from% %to% link-file.bat
 
 call %current_path%\link-file.bat %from% %to% github-download.bat
+
+pause
