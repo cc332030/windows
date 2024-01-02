@@ -1,14 +1,14 @@
 Windows Registry Editor Version 5.00
 
-:: 完全禁用搜索 ui
+; 完全禁用搜索 ui
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "DisableSearch"=dword:00000001
 
-:: 深色主题
+; 深色主题
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
-"AppsUseLightTheme"=dword:00000001
+; "AppsUseLightTheme"=dword:00000001
 "AppsUseLightTheme"=dword:00000000
-"SystemUsesLightTheme"=dword:00000001
+; "SystemUsesLightTheme"=dword:00000001
 "SystemUsesLightTheme"=dword:00000000
 
 ; 时间同步频率，一小时一次
@@ -29,3 +29,53 @@ Windows Registry Editor Version 5.00
 ; cmd 初始化 utf-8
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor]
 "autorun"="chcp 65001 >nul"
+
+; 显示受保护的驱动器文件
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+; "ShowSuperHidden"=dword:00000000
+"ShowSuperHidden"=dword:00000001
+
+; 显示隐藏的文件
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+; "Hidden"=dword:00000002
+"Hidden"=dword:00000001
+
+; 显示已知文件的扩展名
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+; "HideFileExt"=dword:00000001
+"HideFileExt"=dword:00000000
+
+; 禁用自动更新
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+; "NoAutoUpdate"=dword:00000000
+"NoAutoUpdate"=dword:00000001
+
+; 更新不包括驱动程序
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+; "ExcludeWUDriversInQualityUpdate"=dword:00000000
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+
+; 禁用安全中心
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Security Center]
+; "SecurityCenterInDomain"=dword:00000001
+"SecurityCenterInDomain"=dword:00000000
+
+; 禁用 Windows Defender SmartScreen
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter]
+; "EnabledV9"=dword:00000001
+"EnabledV9"=dword:00000000
+
+; 禁用 Windows Defender 防病毒
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
+; "DisableAntiSpyware"=dword:00000000
+"DisableAntiSpyware"=-
+
+; 关闭实时保护
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection]
+; "DisableRealtimeMonitoring"=dword:00000000
+"DisableRealtimeMonitoring"=dword:00000001
+
+; 禁用 Microsoft Edge 时，“首次运行”
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main]
+; "PreventFirstRunPage"=dword:00000000
+"PreventFirstRunPage"=dword:00000001
