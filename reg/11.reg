@@ -10,3 +10,22 @@ Windows Registry Editor Version 5.00
 "AppsUseLightTheme"=dword:00000000
 "SystemUsesLightTheme"=dword:00000001
 "SystemUsesLightTheme"=dword:00000000
+
+; 时间同步频率，一小时一次
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpClient]
+"SpecialPollInterval"=dword:00000258
+
+; 时间同步服务器
+; w32tm /config /update
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters]
+"NtpServer"="ntp.aliyun.com,0x8"
+
+; 最小同步时间，2的几次方
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Config]
+"MinPollInterval"=dword:00000009
+"MaxPollInterval"=dword:0000000a
+"HoldPeriod"=dword:0000000a
+
+; cmd 初始化 utf-8
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor]
+"autorun"="chcp 65001 >nul"
