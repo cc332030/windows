@@ -87,3 +87,7 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main]
 ; "PreventFirstRunPage"=dword:00000000
 "PreventFirstRunPage"=dword:00000001
+
+; 打开资源管理器默认显示此电脑
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"LaunchTo"=dword:00000001
