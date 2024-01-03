@@ -1,8 +1,36 @@
 Windows Registry Editor Version 5.00
 
 ; 完全禁用搜索 ui
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
-"DisableSearch"=dword:00000001
+; [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+; "DisableSearch"=dword:00000001
+
+; 搜索默认排除位置
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Search\CurrentPolicies\DefaultExcludedPaths]
+"c:\\"="c:\\"
+"d:\\"="d:\\"
+"e:\\"="e:\\"
+"f:\\"="f:\\"
+"g:\\"="g:\\"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search\DefaultExcludedPaths]
+"c:\\"="c:\\"
+"d:\\"="d:\\"
+"e:\\"="e:\\"
+"f:\\"="f:\\"
+"g:\\"="g:\\"
+
+; 阻止为特定路径建立索引
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Search\CurrentPolicies\PreventIndexingCertainPaths]
+"c:\\"="c:\\"
+"d:\\"="d:\\"
+"e:\\"="e:\\"
+"f:\\"="f:\\"
+"g:\\"="g:\\"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search\PreventIndexingCertainPaths]
+"c:\\"="c:\\"
+"d:\\"="d:\\"
+"e:\\"="e:\\"
+"f:\\"="f:\\"
+"g:\\"="g:\\"
 
 ; 深色主题
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
