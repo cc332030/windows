@@ -158,3 +158,8 @@ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsMediaPlayer]
 ; "DisableAutoUpdate"=dword:00000000
 "DisableAutoUpdate"=dword:00000001
+
+; 仅在主屏幕和已打开应用的屏幕显示任务栏图标
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+; "MMTaskbarMode"=dword:00000000
+"MMTaskbarMode"=dword:00000001
