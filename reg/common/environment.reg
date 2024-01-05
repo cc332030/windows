@@ -1,0 +1,18 @@
+Windows Registry Editor Version 5.00
+
+
+;HKEY_CURRENT_USER\Environment
+
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Environment]
+
+"http_proxy"="http://127.0.0.1:10809"
+"https_proxy"="http://127.0.0.1:10809"
+
+"JAVA_TOOL_OPTIONS"="-Dfile.encoding=utf-8"
+
+"JAVA_HOME"="C:\\Users\\Administrator\\.gradle\\jdks\\eclipse_openj9-17-amd64-windows\\jdk-17.0.9+9"
+"JAVA_HOME_8"="C:\\Users\\Administrator\\.gradle\\jdks\\eclipse_openj9-8-amd64-windows\\jdk8u392-b08"
+
+"GRADLE_HOME"="C:\\Users\\Administrator\\.gradle\\app"
+"M2_HOME"="C:\\Users\\Administrator\\.m2\\app"
