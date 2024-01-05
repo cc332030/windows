@@ -27,3 +27,7 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BITS]
 ;"Start"=dword:00000002
 "Start"=dword:00000003
+
+; cmd 初始化 utf-8
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor]
+"autorun"="chcp 65001 >nul"

@@ -19,10 +19,6 @@ Windows Registry Editor Version 5.00
 "MaxPollInterval"=dword:0000000a
 "HoldPeriod"=dword:0000000a
 
-; cmd 初始化 utf-8
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor]
-"autorun"="chcp 65001 >nul"
-
 ; control userpasswords2 显示“使用此计算机必须输入密码”
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device]
 "DevicePasswordLessBuildVersion"=dword:00000000
