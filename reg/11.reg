@@ -173,3 +173,8 @@ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 ; "ShowSecondsInSystemClock"=dword:00000000
 "ShowSecondsInSystemClock"=dword:00000001
+
+; 关闭会阻止或取消关机的应用程序的自动终止功能，关机加速
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+; "AllowBlockingAppsAtShutdown"=dword:00000000
+"AllowBlockingAppsAtShutdown"=dword:00000001
