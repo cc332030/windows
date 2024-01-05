@@ -18,3 +18,13 @@ Windows10 输入法不显示候选
 ----
 Add-AppxPackage -Path Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.Appx
 ----
+
+Windows10 右键菜单
+[source,shell]
+----
+# 使用 Windows10 右键菜单
+reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
+
+# 恢复 Windows11 右键菜单
+reg.exe delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /va /f
+----
