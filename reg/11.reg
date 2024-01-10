@@ -93,15 +93,39 @@ Windows Registry Editor Version 5.00
 ; "EnabledV9"=dword:00000001
 "EnabledV9"=dword:00000000
 
-; 禁用 Windows Defender 防病毒
+; Windows Defender - 禁用防病毒
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
 ; "DisableAntiSpyware"=dword:00000000
 "DisableAntiSpyware"=-
 
-; 关闭实时保护
+; Windows Defender - 关闭实时保护
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection]
 ; "DisableRealtimeMonitoring"=dword:00000000
 "DisableRealtimeMonitoring"=dword:00000001
+
+; Windows Defender - 禁用 在启动时启动安全情报更新
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates]
+; "DisableUpdateOnStartupWithoutEngine"=dword:00000000
+"DisableUpdateOnStartupWithoutEngine"=dword:00000001
+
+; Windows Defender - 禁用 在使用电池电源运行时允许安全智能更新
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates]
+; "DisableScheduledSignatureUpdateOnBattery"=dword:00000000
+"DisableScheduledSignatureUpdateOnBattery"=dword:00000001
+
+; Windows Defender - 禁用 在安全智能智影更新后打开扫描
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates]
+; "DisableScanOnUpdate"=dword:00000000
+"DisableScanOnUpdate"=dword:00000001
+
+; Windows Defender - 不自动更新，指定在星期几检查安全情报更新（从不）
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates]
+"ScheduleDay"=dword:00000008
+
+; Windows Defender - 禁用 在启动时检查是否有最新的病毒和间谍软件安全情报
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates]
+; "UpdateOnStartUp"=dword:00000001
+"UpdateOnStartUp"=dword:00000000
 
 ; 中等风险文件
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Associations]
