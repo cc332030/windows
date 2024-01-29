@@ -163,6 +163,11 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "LaunchTo"=dword:00000001
 
+; 任务栏-隐藏 任务视窗
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+;"ShowTaskViewButton"=dword:00000001
+"ShowTaskViewButton"=dword:00000000
+
 ; 任务栏-隐藏 Copilot
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 ; "ShowCopilotButton"=dword:00000001
