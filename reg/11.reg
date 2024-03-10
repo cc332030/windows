@@ -1,5 +1,10 @@
 Windows Registry Editor Version 5.00
 
+; 禁用 粘滞键 的键盘快捷方式
+[HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
+; "Flags"="510"
+"Flags"="506"
+
 ; 完全禁用搜索 ui
 ; [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 ; "DisableSearch"=dword:00000001
