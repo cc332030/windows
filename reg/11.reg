@@ -1,5 +1,10 @@
 Windows Registry Editor Version 5.00
 
+; 系统失败-将事件写入系统日志
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
+; "LogEvent"=dword:00000000
+"LogEvent"=dword:00000001
+
 ; 禁用锁屏页面
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization]
 "NoLockScreen"=dword:00000001
