@@ -1,5 +1,13 @@
 Windows Registry Editor Version 5.00
 
+; 加快关机速度
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"AutoEndTasks"="1"             ;是否主动结束任务? (1 为 Yes，0 为 No)
+"HungAppTimeout"="1000"        ;系统通知应用程序结束任务，若还有应用程序 1 秒后没有响应，就发出最后通牒 (默认值"5000")
+"WaitToKillAppTimeout"="1000"  ;系统给还没有响应的应用程序最后通牒，1 秒后还不响应就强行结束，并执行关机 (默认值"20000")
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
+"WaitToKillServiceTimeout"="2000"   ;关机前，若某个服务在 2 秒 内还没结束，系统就强行关闭之 (默认值"20000")
+
 ; Win + X 不显示 PowerShell
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 ;"DontUsePowerShellOnWinX"=dword:00000000
