@@ -1,5 +1,15 @@
 Windows Registry Editor Version 5.00
 
+; 禁止磁盘自动播放
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\services\ShellHWDetection]
+"Start"=dword:00000004
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoDriveTypeAutoRun"=dword:000000b5
+
+; 关闭 USB 设备的自动播放
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USBSTOR]
+"AutoRun"=dword:00000001
+
 ; 加快关机速度
 [HKEY_CURRENT_USER\Control Panel\Desktop]
 "AutoEndTasks"="1"             ;是否主动结束任务? (1 为 Yes，0 为 No)
