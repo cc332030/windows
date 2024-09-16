@@ -1,5 +1,30 @@
 Windows Registry Editor Version 5.00
 
+; Windows 图片查看器
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FeatureUsage\AppSwitched]
+;"Microsoft.Windows.Explorer"=dword:00000054
+"Microsoft.Windows.Explorer"=dword:00000055
+
+; 单独的进程中打开文件夹窗口
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+;"SeparateProcess"=dword:00000000
+"SeparateProcess"=dword:00000001
+
+; 禁止自动播放
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers]
+;"DisableAutoplay"=dword:00000000
+"DisableAutoplay"=dword:00000001
+
+; 禁止管理员批准模式
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+;"FilterAdministratorToken"=dword:00000001
+"FilterAdministratorToken"=-
+
+; 禁止蓝屏自动重启
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
+;"AutoReboot"=dword:00000001
+"AutoReboot"=dword:00000000
+
 ; 禁止磁盘自动播放
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\services\ShellHWDetection]
 "Start"=dword:00000004
@@ -163,31 +188,57 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
 ; "NoAutoUpdate"=dword:00000000
 "NoAutoUpdate"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+;"AUOptions"=dword:00000002
+"AUOptions"=dword:00000001
 
 ; 更新不包括驱动程序
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
 ; "ExcludeWUDriversInQualityUpdate"=dword:00000000
 "ExcludeWUDriversInQualityUpdate"=dword:00000001
 
+; 更新不包括恶意软件删除工具
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
+"DontOfferThroughWUAU"=dword:00000001
+
+; 更新有用户登录时不自动重启
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+;"NoAutoRebootWithLoggedOnUsers"=dword:00000000
+"NoAutoRebootWithLoggedOnUsers"=dword:00000001
+
+; 禁止自动安装无需重启的更新
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+;"AutoInstallMinorUpdates"=dword:00000001
+"AutoInstallMinorUpdates"=dword:00000000
+
 ; 禁用安全中心
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Security Center]
 ; "SecurityCenterInDomain"=dword:00000001
 "SecurityCenterInDomain"=dword:00000000
+
+; 禁止Windows Defender
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
+"DisableAntiSpyware"=dword:00000001
 
 ; 禁用 Windows Defender SmartScreen
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter]
 ; "EnabledV9"=dword:00000001
 "EnabledV9"=dword:00000000
 
-; Windows Defender - 禁用防病毒
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
-; "DisableAntiSpyware"=dword:00000000
-"DisableAntiSpyware"=-
-
 ; Windows Defender - 关闭实时保护
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection]
 ; "DisableRealtimeMonitoring"=dword:00000000
 "DisableRealtimeMonitoring"=dword:00000001
+
+; Windows Defender - 策略（未知）
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Group Policy\PolicyApplicationState]
+;"PolicyState"=dword:00000002
+"PolicyState"=dword:00000000
+
+; Windows Defender - 策略（未知）
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Group Policy\PolicyApplicationState]
+;"PolicyState"=dword:00000002
+"PolicyState"=dword:00000000
 
 ; Windows Defender - 禁用 在启动时启动安全情报更新
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Signature Updates]
