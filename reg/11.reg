@@ -1,5 +1,10 @@
 Windows Registry Editor Version 5.00
 
+; 小内存转储（256kb）
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
+;"CrashDumpEnabled"=dword:00000007
+"CrashDumpEnabled"=dword:00000003
+
 ; Windows 图片查看器
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FeatureUsage\AppSwitched]
 ;"Microsoft.Windows.Explorer"=dword:00000054
