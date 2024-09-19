@@ -1,5 +1,19 @@
 Windows Registry Editor Version 5.00
 
+; 应用商店
+; 禁用应用商店
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore]
+"RemoveWindowsStore"=dword:00000001
+
+; 禁用应用商店 自动下载更新
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore]
+"AutoDownload"=dword:00000002
+
+; 占用太多 CPU，LTSC 没有商店
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AppXSvc]
+"Start"=dword:00000004
+
+
 ; SMB 启用不安全的来宾登录
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LanmanWorkstation]
 "AllowInsecureGuestAuth"=dword:00000001
