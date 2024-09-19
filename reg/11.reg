@@ -1,5 +1,8 @@
 Windows Registry Editor Version 5.00
 
+; SMB 启用不安全的来宾登录
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LanmanWorkstation]
+"AllowInsecureGuestAuth"=dword:00000001
 
 ; cmd
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\c_cmd]
