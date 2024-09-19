@@ -1,5 +1,13 @@
 Windows Registry Editor Version 5.00
 
+; Shift 右键 cmd
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\cmd]
+"HideBasedOnVelocityId"=-
+"ShowBasedOnVelocityId"=dword:00639bc8
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\cmd]
+"HideBasedOnVelocityId"=-
+"ShowBasedOnVelocityId"=dword:00639bc8
+
 ; 显示 cmd
 [HKEY_CLASSES_ROOT\Directory\shell\cmd]
 "ShowBasedOnVelocityId"=dword:00639bc8

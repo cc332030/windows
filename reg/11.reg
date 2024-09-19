@@ -191,32 +191,6 @@ Windows Registry Editor Version 5.00
 "Default Mode"=dword:00000000
 "Default Mode"=dword:00000001
 
-; Shift 右键 cmd
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\cmd]
-"HideBasedOnVelocityId"=-
-"ShowBasedOnVelocityId"=dword:00639bc8
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\cmd]
-"HideBasedOnVelocityId"=-
-"ShowBasedOnVelocityId"=dword:00639bc8
-
-; 显示 cmd
-[HKEY_CLASSES_ROOT\Directory\shell\cmd]
-"ShowBasedOnVelocityId"=dword:00639bc8
-"HideBasedOnVelocityId"=-
-
-[HKEY_CLASSES_ROOT\Directory\Background\shell\cmd]
-"ShowBasedOnVelocityId"=dword:00639bc8
-"HideBasedOnVelocityId"=-
-
-; 隐藏 Powershell
-[HKEY_CLASSES_ROOT\Directory\shell\Powershell]
-"ShowBasedOnVelocityId"=-
-"HideBasedOnVelocityId"=dword:00639bc8
-
-[HKEY_CLASSES_ROOT\Directory\Background\shell\Powershell]
-"ShowBasedOnVelocityId"=-
-"HideBasedOnVelocityId"=dword:00639bc8
-
 ; 打开小键盘
 [HKEY_USERS\.DEFAULT\Control Panel\Keyboard]
 "InitialKeyboardIndicators"="2147483648"
