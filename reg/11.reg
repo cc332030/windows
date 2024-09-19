@@ -1,5 +1,232 @@
 Windows Registry Editor Version 5.00
 
+
+; cmd
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\c_cmd]
+@="cmd"
+"Icon"="C:\\Windows\\System32\\cmd.exe"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\c_cmd\command]
+@="cmd"
+
+[HKEY_CLASSES_ROOT\Directory\shell\c_cmd]
+@="cmd"
+"Icon"="C:\\Windows\\System32\\cmd.exe"
+[HKEY_CLASSES_ROOT\Directory\shell\c_cmd\command]
+@="cmd /s /k pushd \"%V\""
+
+
+;空白右键 重启资源管理器
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\Background\shell\RestartExplorer]
+@="重启 explorer"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\Background\shell\RestartExplorer\Command]
+@="cmd /c taskkill /f /im explorer.exe & start explorer"
+
+;右键复制文件路径
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shell\copypath]
+@="复制路径"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shell\copypath\command]
+@="mshta vbscript:clipboarddata.setdata(\"text\",\"%1\")(close)"
+
+;右键复制文件夹路径
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\copypath]
+@="复制路径"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\copypath\command]
+@="mshta vbscript:clipboarddata.setdata(\"text\",\"%1\")(close)"
+
+
+; temp
+[HKEY_CURRENT_USER\Environment]
+"TEMP"="c:\\temp"
+"TMP"="c:\\temp"
+
+; temp
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Environment]
+"TEMP"="c:\\temp"
+"TMP"="c:\\temp"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders]
+"Desktop"=hex(2):64,00,3a,00,5c,00,75,00,73,00,65,00,72,00,5c,00,70,00,65,00,\
+  72,00,73,00,6f,00,6e,00,5c,00,64,00,65,00,73,00,6b,00,74,00,6f,00,70,00,00,\
+  00
+"Favorites"=hex(2):64,00,3a,00,5c,00,75,00,73,00,65,00,72,00,5c,00,70,00,65,00,\
+  72,00,73,00,6f,00,6e,00,5c,00,66,00,61,00,76,00,6f,00,72,00,69,00,74,00,65,\
+  00,73,00,00,00
+"My Music"=hex(2):64,00,3a,00,5c,00,75,00,73,00,65,00,72,00,5c,00,70,00,65,00,\
+  72,00,73,00,6f,00,6e,00,5c,00,6d,00,75,00,73,00,69,00,63,00,00,00
+"My Pictures"=hex(2):64,00,3a,00,5c,00,75,00,73,00,65,00,72,00,5c,00,70,00,65,\
+  00,72,00,73,00,6f,00,6e,00,5c,00,70,00,69,00,63,00,74,00,75,00,72,00,65,00,\
+  73,00,00,00
+"My Video"=hex(2):64,00,3a,00,5c,00,75,00,73,00,65,00,72,00,5c,00,70,00,65,00,\
+  72,00,73,00,6f,00,6e,00,5c,00,76,00,69,00,64,00,65,00,6f,00,73,00,00,00
+"Personal"=hex(2):64,00,3a,00,5c,00,75,00,73,00,65,00,72,00,5c,00,70,00,65,00,\
+  72,00,73,00,6f,00,6e,00,5c,00,64,00,6f,00,63,00,75,00,6d,00,65,00,6e,00,74,\
+  00,73,00,00,00
+"Startup"=hex(2):64,00,3a,00,5c,00,75,00,73,00,65,00,72,00,5c,00,70,00,65,00,\
+  72,00,73,00,6f,00,6e,00,5c,00,73,00,74,00,61,00,72,00,74,00,75,00,70,00,00,\
+  00
+"{374DE290-123F-4565-9164-39C4925E467B}"=hex(2):64,00,3a,00,5c,00,75,00,73,00,\
+  65,00,72,00,5c,00,70,00,65,00,72,00,73,00,6f,00,6e,00,5c,00,64,00,6f,00,77,\
+  00,6e,00,6c,00,6f,00,61,00,64,00,73,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders]
+"Common Desktop"=hex(2):64,00,3a,00,5c,00,75,00,73,00,65,00,72,00,5c,00,70,00,\
+  75,00,62,00,6c,00,69,00,63,00,5c,00,64,00,65,00,73,00,6b,00,74,00,6f,00,70,\
+  00,00,00
+"Common Documents"=hex(2):64,00,3a,00,5c,00,75,00,73,00,65,00,72,00,5c,00,70,\
+  00,75,00,62,00,6c,00,69,00,63,00,5c,00,64,00,6f,00,63,00,75,00,6d,00,65,00,\
+  6e,00,74,00,73,00,00,00
+"Common Startup"=hex(2):64,00,3a,00,5c,00,75,00,73,00,65,00,72,00,5c,00,70,00,\
+  75,00,62,00,6c,00,69,00,63,00,5c,00,73,00,74,00,61,00,72,00,74,00,75,00,70,\
+  00,00,00
+"CommonMusic"=hex(2):64,00,3a,00,5c,00,75,00,73,00,65,00,72,00,5c,00,70,00,75,\
+  00,62,00,6c,00,69,00,63,00,5c,00,6d,00,75,00,73,00,69,00,63,00,00,00
+"CommonPictures"=hex(2):64,00,3a,00,5c,00,75,00,73,00,65,00,72,00,5c,00,70,00,\
+  75,00,62,00,6c,00,69,00,63,00,5c,00,70,00,69,00,63,00,74,00,75,00,72,00,65,\
+  00,73,00,00,00
+"CommonVideo"=hex(2):64,00,3a,00,5c,00,75,00,73,00,65,00,72,00,5c,00,70,00,75,\
+  00,62,00,6c,00,69,00,63,00,5c,00,76,00,69,00,64,00,65,00,6f,00,73,00,00,00
+"{3D644C9B-1FB8-4f30-9B45-F670235F79C0}"=hex(2):64,00,3a,00,5c,00,75,00,73,00,\
+  65,00,72,00,5c,00,70,00,65,00,72,00,73,00,6f,00,6e,00,5c,00,64,00,6f,00,77,\
+  00,6e,00,6c,00,6f,00,61,00,64,00,73,00,00,00
+
+;关闭盖子
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\5CA83367-6E45-459F-A27B-476B1D01C936]
+;无操作
+;"ACSettingIndex"=dword:00000000
+;"DCSettingIndex"=dword:00000000
+
+;休眠
+"ACSettingIndex"=dword:00000002
+"DCSettingIndex"=dword:00000002
+
+;电源键关机
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\7648EFA3-DD9C-4E3E-B566-50F929386280]
+"ACSettingIndex"=dword:00000003
+"DCSettingIndex"=dword:00000003
+
+;不睡眠
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\7bc4a2f9-d8fc-4469-b07b-33eb785aaca0]
+;"ACSettingIndex"=dword:00000000
+;"DCSettingIndex"=dword:00000000
+
+;睡眠按钮无操作
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\96996BC0-AD50-47EC-923B-6F41874DD9EB]
+;"ACSettingIndex"=dword:00000000
+;"DCSettingIndex"=dword:00000000
+
+; 添加照片查看器
+ ; Change Extension's File Type
+ [HKEY_CURRENT_USER\Software\Classes\.jpg]
+ @="PhotoViewer.FileAssoc.Tiff"
+ ; Change Extension's File Type
+
+ [HKEY_CURRENT_USER\Software\Classes\.jpeg]
+ @="PhotoViewer.FileAssoc.Tiff"
+ ; Change Extension's File Type
+
+ [HKEY_CURRENT_USER\Software\Classes\.gif]
+ @="PhotoViewer.FileAssoc.Tiff"
+ ; Change Extension's File Type
+
+ [HKEY_CURRENT_USER\Software\Classes\.png]
+ @="PhotoViewer.FileAssoc.Tiff"
+ ; Change Extension's File Type
+
+ [HKEY_CURRENT_USER\Software\Classes\.bmp]
+ @="PhotoViewer.FileAssoc.Tiff"
+ ; Change Extension's File Type
+
+ [HKEY_CURRENT_USER\Software\Classes\.tiff]
+ @="PhotoViewer.FileAssoc.Tiff"
+ ; Change Extension's File Type
+
+ [HKEY_CURRENT_USER\Software\Classes\.ico]
+ @="PhotoViewer.FileAssoc.Tiff"
+
+;不显示应用通知
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\PushNotifications]
+;"ToastEnabled"=dword:00000001
+"ToastEnabled"=dword:00000000
+
+;锁屏不显示通知
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings]
+"NOC_GLOBAL_SETTING_ALLOW_TOASTS_ABOVE_LOCK"=dword:00000000
+
+;锁屏不显示警告
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings]
+"NOC_GLOBAL_SETTING_ALLOW_CRITICAL_TOASTS_ABOVE_LOCK"=dword:00000000
+
+;演示时隐藏通知
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings]
+"NOC_GLOBAL_SETTING_SUPRESS_TOASTS_WHILE_DUPLICATING"=dword:00000001
+
+;关闭功能气球通知
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"NoBalloonFeatureAdvertisements"=dword:00000001
+
+;关闭所有气球通知
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"TaskbarNoNotification"=dword:00000001
+
+;关闭将通知程序提升到任务栏
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"NoSystraySystemPromotion"=dword:00000001
+
+;禁止将气球通知显示为 Toast
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"EnableLegacyBalloonNotifications"=dword:00000001
+
+; 禁用通知声音
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings]
+"NOC_GLOBAL_SETTING_ALLOW_NOTIFICATION_SOUND"=dword:00000000
+
+; 记事本关闭自动换行
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Notepad]
+"fWrap"=dword:00000001
+"fWrap"=dword:00000000
+
+; 微软输入法-默认英文
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\InputMethod\Settings\CHS]
+"Default Mode"=dword:00000000
+"Default Mode"=dword:00000001
+
+; Shift 右键 cmd
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\cmd]
+"HideBasedOnVelocityId"=-
+"ShowBasedOnVelocityId"=dword:00639bc8
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\cmd]
+"HideBasedOnVelocityId"=-
+"ShowBasedOnVelocityId"=dword:00639bc8
+
+; 显示 cmd
+[HKEY_CLASSES_ROOT\Directory\shell\cmd]
+"ShowBasedOnVelocityId"=dword:00639bc8
+"HideBasedOnVelocityId"=-
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cmd]
+"ShowBasedOnVelocityId"=dword:00639bc8
+"HideBasedOnVelocityId"=-
+
+; 隐藏 Powershell
+[HKEY_CLASSES_ROOT\Directory\shell\Powershell]
+"ShowBasedOnVelocityId"=-
+"HideBasedOnVelocityId"=dword:00639bc8
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Powershell]
+"ShowBasedOnVelocityId"=-
+"HideBasedOnVelocityId"=dword:00639bc8
+
+; 打开小键盘
+[HKEY_USERS\.DEFAULT\Control Panel\Keyboard]
+"InitialKeyboardIndicators"="2147483648"
+"InitialKeyboardIndicators"="2"
+
+; 禁用搜索图标
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"SearchboxTaskbarMode"=dword:00000001
+"SearchboxTaskbarMode"=dword:00000000
+
 ; 桌面图标
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
 ; 此电脑
@@ -58,34 +285,28 @@ Windows Registry Editor Version 5.00
 ;"DontUsePowerShellOnWinX"=dword:00000000
 "DontUsePowerShellOnWinX"=dword:00000001
 
-;此电脑，删除六个文件夹
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
-;文档
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{A8CDFF1C-4878-43be-B5FD-F8091C1C60D0}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{d3162b92-9365-467a-956b-92703aca08af}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{A8CDFF1C-4878-43be-B5FD-F8091C1C60D0}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{d3162b92-9365-467a-956b-92703aca08af}]
-;下载
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{374DE290-123F-4565-9164-39C4925E467B}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{088e3905-0323-4b02-9826-5d99428e115f}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{374DE290-123F-4565-9164-39C4925E467B}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{088e3905-0323-4b02-9826-5d99428e115f}]
-;音乐
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}]
-;图片
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{24ad3ad4-a569-4530-98e1-ab02f9417aa8}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{24ad3ad4-a569-4530-98e1-ab02f9417aa8}]
-;视频
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{A0953C92-50DC-43bf-BE83-3742FED03C9C}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{f86fa3ab-70d2-4fc7-9c99-fcbf05467f3a}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{A0953C92-50DC-43bf-BE83-3742FED03C9C}]
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{f86fa3ab-70d2-4fc7-9c99-fcbf05467f3a}]
+;此电脑，删除 7 个文件夹
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{0ddd015d-b06c-45d5-8c4c-f59713854639}\PropertyBag]
+"ThisPCPolicy"="Show"
+"ThisPCPolicy"="Hide"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{31C0DD25-9439-4F12-BF41-7FF4EDA38722}\PropertyBag]
+"ThisPCPolicy"="Show"
+"ThisPCPolicy"="Hide"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{35286a68-3c57-41a1-bbb1-0eae73d76c95}\PropertyBag]
+"ThisPCPolicy"="Show"
+"ThisPCPolicy"="Hide"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{7d83ee9b-2244-4e70-b1f5-5393042af1e4}\PropertyBag]
+"ThisPCPolicy"="Show"
+"ThisPCPolicy"="Hide"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{a0c69a99-21c8-4671-8703-7934162fcf1d}\PropertyBag]
+"ThisPCPolicy"="Show"
+"ThisPCPolicy"="Hide"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}\PropertyBag]
+"ThisPCPolicy"="Show"
+"ThisPCPolicy"="Hide"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{f42ee2d3-909f-4907-8871-4c22fc0bf756}\PropertyBag]
+"ThisPCPolicy"="Show"
+"ThisPCPolicy"="Hide"
 
 ; 为右键加上“管理员取得所有权菜单”
 [HKEY_CLASSES_ROOT\*\shell\runas]
@@ -275,8 +496,8 @@ Windows Registry Editor Version 5.00
 "UpdateOnStartUp"=dword:00000000
 
 ; 中等风险文件
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Associations]
-"ModRiskFileTypes"=".exe;.bat;.cmd"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Associations]
+"ModRiskFileTypes"=".bat;.exe;.reg;.vbs;.chm;.msi;.js;.cmd"
 
 ; 关闭UAC
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
