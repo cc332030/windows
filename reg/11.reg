@@ -107,6 +107,12 @@ Windows Registry Editor Version 5.00
   65,00,72,00,5c,00,70,00,65,00,72,00,73,00,6f,00,6e,00,5c,00,64,00,6f,00,77,\
   00,6e,00,6c,00,6f,00,61,00,64,00,73,00,00,00
 
+;关闭盖子
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\5CA83367-6E45-459F-A27B-476B1D01C936]
+;无操作
+;"ACSettingIndex"=dword:00000000
+;"DCSettingIndex"=dword:00000000
+
 ;休眠
 "ACSettingIndex"=dword:00000002
 "DCSettingIndex"=dword:00000002
