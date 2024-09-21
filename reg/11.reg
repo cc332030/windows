@@ -1,5 +1,10 @@
 Windows Registry Editor Version 5.00
 
+; 远程协助-禁用
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Remote Assistance]
+;"fAllowToGetHelp"=dword:00000001
+"fAllowToGetHelp"=dword:00000000
+
 ; 系统还原-开启
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore]
 "DisableConfig"=dword:00000000
