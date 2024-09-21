@@ -107,6 +107,10 @@ Windows Registry Editor Version 5.00
   65,00,72,00,5c,00,70,00,65,00,72,00,73,00,6f,00,6e,00,5c,00,64,00,6f,00,77,\
   00,6e,00,6c,00,6f,00,61,00,64,00,73,00,00,00
 
+; 活动方案-高性能
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings]
+"ActivePowerScheme"="8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c"
+
 ;关闭盖子
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\5CA83367-6E45-459F-A27B-476B1D01C936]
 ;无操作
