@@ -107,12 +107,6 @@ Windows Registry Editor Version 5.00
   65,00,72,00,5c,00,70,00,65,00,72,00,73,00,6f,00,6e,00,5c,00,64,00,6f,00,77,\
   00,6e,00,6c,00,6f,00,61,00,64,00,73,00,00,00
 
-;关闭盖子
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\5CA83367-6E45-459F-A27B-476B1D01C936]
-;无操作
-;"ACSettingIndex"=dword:00000000
-;"DCSettingIndex"=dword:00000000
-
 ;休眠
 "ACSettingIndex"=dword:00000002
 "DCSettingIndex"=dword:00000002
@@ -122,15 +116,29 @@ Windows Registry Editor Version 5.00
 "ACSettingIndex"=dword:00000003
 "DCSettingIndex"=dword:00000003
 
-;不睡眠
-;[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\7bc4a2f9-d8fc-4469-b07b-33eb785aaca0]
-;"ACSettingIndex"=dword:00000000
-;"DCSettingIndex"=dword:00000000
+; 睡眠
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\96996BC0-AD50-47EC-923B-6F41874DD9EB]
+"ACSettingIndex"=dword:00000001
+"DCSettingIndex"=dword:00000001
 
-;睡眠按钮无操作
-;[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\96996BC0-AD50-47EC-923B-6F41874DD9EB]
-;"ACSettingIndex"=dword:00000000
-;"DCSettingIndex"=dword:00000000
+; 混合睡眠
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\94ac6d29-73ce-41a6-809f-6363ba21b47e]
+"ACSettingIndex"=dword:00000001
+"DCSettingIndex"=dword:00000001
+
+; 接通电源不睡眠
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\29F6C1DB-86DA-48C5-9FDB-F2B67B1F44DA]
+"ACSettingIndex"=dword:00000000
+; 使用电池 10 分钟睡眠
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\29F6C1DB-86DA-48C5-9FDB-F2B67B1F44DA]
+"DCSettingIndex"=dword:00000258
+
+; 接通电源不休眠
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\9D7815A6-7EE4-497E-8888-515A05F02364]
+"ACSettingIndex"=dword:00000000
+; 使用电池 20 分钟休眠
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\9D7815A6-7EE4-497E-8888-515A05F02364]
+"DCSettingIndex"=dword:000004b0
 
 ; 添加照片查看器
  ; Change Extension's File Type
