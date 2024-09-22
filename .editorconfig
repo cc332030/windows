@@ -9,3 +9,6 @@ end_of_line = crlf
 
 [*.reg]
 charset = utf-16le
+
+[unattend.xml]
+end_of_line = crlf
