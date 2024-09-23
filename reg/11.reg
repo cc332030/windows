@@ -1,9 +1,8 @@
 Windows Registry Editor Version 5.00
 
-; ipv6-禁用，会导致 Windows 检测网络失败
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters]
+; ipv6-禁用
+; [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters]
 ; "DisabledComponents"=dword:000000ff
-"DisabledComponents"=-
 
 ; 网络连接状态指示器-启用
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator]
