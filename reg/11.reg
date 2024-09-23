@@ -5,6 +5,7 @@ Windows Registry Editor Version 5.00
 ; "DisabledComponents"=dword:000000ff
 
 ; 网络连接状态指示器-启用
+; NCSI：HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator]
 ; "NoActiveProbe"=dword:00000001
 "NoActiveProbe"=dword:00000000
