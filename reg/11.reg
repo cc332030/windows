@@ -262,9 +262,9 @@ Windows Registry Editor Version 5.00
 "CrashDumpEnabled"=dword:00000003
 
 ; Windows 图片查看器
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FeatureUsage\AppSwitched]
-;"Microsoft.Windows.Explorer"=dword:00000054
-"Microsoft.Windows.Explorer"=dword:00000055
+; [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FeatureUsage\AppSwitched]
+; "Microsoft.Windows.Explorer"=dword:00000054
+; "Microsoft.Windows.Explorer"=dword:00000055
 
 ; 单独的进程中打开文件夹窗口
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
