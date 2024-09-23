@@ -1,12 +1,12 @@
 Windows Registry Editor Version 5.00
 
 ; ipv6-禁用
-; [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters]
-; "DisabledComponents"=dword:000000ff
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters]
+"DisabledComponents"=dword:000000ff
 
 ; 网络连接状态指示器-启用
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator]
-"NoActiveProbe"=dword:00000001
+; "NoActiveProbe"=dword:00000001
 "NoActiveProbe"=dword:00000000
 
 ; 远程协助-禁用
