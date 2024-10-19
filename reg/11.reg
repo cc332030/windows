@@ -1,5 +1,12 @@
 Windows Registry Editor Version 5.00
 
+; 任务栏
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+; 始终合并
+"TaskbarGlomLevel"=dword:00000000
+; 已满时
+"TaskbarGlomLevel"=dword:00000001
+
 ; TLS 1.3
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
 ; "SecureProtocols"=dword:00000aa0
